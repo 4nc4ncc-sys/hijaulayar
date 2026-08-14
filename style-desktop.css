@@ -523,7 +523,7 @@ body {
 .sail {
   position: relative; 
   height: 100vh;                          /* full satu layar */
-  background: url(images/Saill.png) no-repeat center center;
+  background: url(images/saill.png) no-repeat center center;
   background-size: cover;                 /* gambar penuh */
   display: flex;
   justify-content: center;

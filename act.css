@@ -1,0 +1,323 @@
+:root{
+    --green--: #71BE46;
+    --grey--: #606161;
+    --white--: #ffffff;
+}
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* biar tiap section stack vertikal */
+}
+
+.site-header {
+  position: fixed;    /* kalau mau nempel di atas */
+  display: flex;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 999;       /* biar di atas konten lain */
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1134px;
+    top: 32px;
+    margin-top: 0px;
+    z-index: 100;
+    padding: 10px;
+}
+
+nav img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-left: 60px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+nav ul li a{
+    font-family: "hanken grotesk", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu-toggle {
+  display: none; /* tombol hamburger disembunyiin di desktop */
+}
+
+/*cover*/
+
+.cover {
+  height: 100vh;
+  background: url(images/act.png);
+  background-size: cover;
+  justify-content: space-between;   /* geser ke kanan */
+  font-family: 'Hanken Grotesk', sans-serif;
+  display: flex;
+  margin-top: 50px;
+}
+
+.spp-left {
+  flex: 1;
+  padding: 60px 80px;
+  min-height: 400px; /* tinggi minimal biar seimbang */
+  margin-top: 220px;
+}
+
+.spp-left h1 {
+  color: #71BE46;
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.spp-left p {
+  color: var(--grey--);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.spp-right {
+  flex: 0.8;
+  text-align: justify;
+  margin-left: 500px;
+  margin-top: 400px;
+}
+
+.spp-right h1 {
+  color: #71BE46;
+  font-size: 48px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+
+.spp-right p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.scopeof{
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.scope {
+  display: flex;
+  gap: 40px;
+  margin-top: -10px;
+  color: #fff;
+}
+
+.scope ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.scope li {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/*poster*/
+
+.poster {
+  position: relative; 
+  height: 100vh; /* penuh satu layar */
+  width: 100%;   /* isi penuh */
+  background: url("images/act-book.png") no-repeat center center;
+  background-size: cover; /* gambar penuh */
+  display: flex;
+  align-items: center;    /* konten di tengah vertikal */
+  justify-content: center;/* konten di tengah horizontal */
+}
+
+.post {
+  /* kalau mau isi konten di atas poster */
+  color: #fff;
+  font-size: 24px;
+}
+
+/*review*/
+
+.review {
+  position: relative; 
+  height: 100vh;                          /* full satu layar */
+  background: url(images/review.png) no-repeat center center;
+  background-size: cover;                 /* gambar penuh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 60px;
+}
+
+/*act*/
+
+.act-poster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  padding: 60px 80px;
+  font-family: 'Hanken Grotesk', sans-serif;
+  background: #fff;
+  color: #333;
+  align-items: center;
+}
+
+/* Kiri */
+.act-left {
+  flex: 0.5;
+}
+
+.act-logo {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.act-left p {
+  font-size: 16px;
+  line-height: 1.6;
+  flex: 0.5;
+}
+
+/* Kanan */
+.act-right {
+  flex: 0.47;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.poster-card {
+  background: #f5f5f5;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.poster-card img {
+  width: 100%;
+  display: block;
+}
+
+.poster-card p {
+  font-size: 14px;
+  padding: 10px;
+  background: #fff;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .act-poster {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .act-right {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* footer */
+
+.footer {
+  height: 60vh;               /* full satu layar */
+  background: #333;            /* dark theme */
+  color: #fff;
+  padding: 50px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* konten atas & bawah */
+  font-family: Arial, sans-serif;
+}
+
+.footer-left .logo {
+  width: 50px;          /* atur ukuran logo */
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-left .logo {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-left a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-right a {
+  color: #fff;          /* hijau */
+  text-decoration: none;   /* hilangkan garis bawah */
+  font-weight: bold;
+}
+
+.footer-right a:hover {
+  text-decoration: underline; /* efek hover */
+  color: #fff;             /* hijau lebih gelap saat hover */
+}
+
+.footer-center h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-center ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-center li {
+  margin-bottom: 10px;
+}
+
+.footer-right p {
+  font-size: 16px;
+  font-weight: medium;
+  color: #fff;
+}
+
+.footer hr {
+  border: 0;
+  border-top: 1px solid #fff;
+  margin: 0px 0;        
+  margin-top: 60px;
+  margin-bottom: 0px;
+  width: 100%;          
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 0px;      
+  padding-bottom: 0px; 
+}

@@ -1,0 +1,353 @@
+:root{
+    --green--: #71BE46;
+    --grey--: #606161;
+    --white--: #ffffff;
+}
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* biar tiap section stack vertikal */
+}
+
+.site-header {
+  position: fixed;    /* kalau mau nempel di atas */
+  display: flex;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 999;       /* biar di atas konten lain */
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1134px;
+    top: 32px;
+    margin-top: 0px;
+    z-index: 100;
+    padding: 10px;
+}
+
+nav img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-left: 60px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+nav ul li a{
+    font-family: "hanken grotesk", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/*cover*/
+
+.cover {
+  height: 80vh;
+  background: linear-gradient(to top, #D2512D, transparent, transparent, transparent, transparent), url(images/nagasosa-cover.png) center/cover no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px 20px;
+  margin: 0;   /* jangan auto */
+  margin-top: 60px;
+}
+
+/*description*/
+
+.wo-section {
+  display: flex;
+  min-height: 80vh;
+  align-items: center;   /* tinggi kiri–kanan sama */
+  align-content: center;
+  gap: 200px;
+  padding: 80px 80px;
+  background: #D2512D;
+  color: var(--white--);
+  font-family: 'hanken grotesk', sans-serif;
+}
+
+.wo-section h1 {
+  color: var(--white--); /* biru tua elegan */
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.left {
+  flex: 1.5;
+}
+
+.left p {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.wo-section .right {
+  flex: 1;
+  max-width: 300px;
+}
+
+.wo-section .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* konten atas & bawah sejajar */
+  margin-top: 64px;
+}
+
+/*dharma*/
+
+.dhama1 {
+  height: 120vh;
+  background: url(images/naga1.png) no-repeat center center;
+  background-size: cover;
+  justify-content: space-between;   /* geser ke kanan */
+  align-items: center;         /* rata tengah vertikal */
+  font-family: 'Hanken Grotesk', sans-serif;
+  display: flex;
+  align-items: flex-start;
+  width: cover;;
+}
+
+/*dharma2*/
+
+.dhama2 {
+  height: 100vh;
+  background: url(images/naga2.png) no-repeat center center;
+  background-size: cover;
+  justify-content: space-between;   /* geser ke kanan */
+  align-items: center;         /* rata tengah vertikal */
+  font-family: 'Hanken Grotesk', sans-serif;
+  display: flex;
+  align-items: flex-start;
+  width: cover;;
+}
+
+/*pattern*/
+
+
+.episode-section {
+  display: flex;
+  min-height: 90vh;
+  color: var(--grey--);
+  font-family: 'Hanken Grotesk', sans-serif;
+  padding: 40px;
+  gap: 20px;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
+}
+
+.pattern-img {
+  max-width: 60%;
+  height: auto;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  max-width: 300px;
+  margin-right: 150px;
+}
+
+/*podcast*/
+
+.podcast-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Hanken Grotesk', sans-serif;
+  padding: 60px 20px;
+}
+
+.image-wrapper {
+  width: 105%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-wrapper {
+  max-width: 900px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300
+}
+
+.text-wrapper p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/*section*/
+
+.nagaghosa-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff; /* putih sesuai bagian bawah */
+  font-family: 'Hanken Grotesk', sans-serif;
+  padding: 60px 20px;
+}
+
+.banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.banner img {
+  max-width: 105%;
+  height: auto;
+}
+
+.description {
+  max-width: 800px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300
+}
+
+.description p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/*review*/
+
+.review {
+  position: relative; 
+  height: 100vh;                          /* full satu layar */
+  background: url(images/review.png) no-repeat center center;
+  background-size: cover;                 /* gambar penuh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 60px;
+}
+
+/* footer */
+
+.footer {
+  height: 60vh;               /* full satu layar */
+  background: #333;            /* dark theme */
+  color: #fff;
+  padding: 50px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* konten atas & bawah */
+  font-family: Arial, sans-serif;
+}
+
+.footer-left .logo {
+  width: 50px;          /* atur ukuran logo */
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-left .logo {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-left a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-right a {
+  color: #fff;          /* hijau */
+  text-decoration: none;   /* hilangkan garis bawah */
+  font-weight: bold;
+}
+
+.footer-right a:hover {
+  text-decoration: underline; /* efek hover */
+  color: #fff;             /* hijau lebih gelap saat hover */
+}
+
+.footer-center h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-center ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-center li {
+  margin-bottom: 10px;
+}
+
+.footer-right p {
+  font-size: 16px;
+  font-weight: medium;
+  color: #fff;
+}
+
+.footer hr {
+  border: 0;
+  border-top: 1px solid #fff;
+  margin: 0px 0;        
+  margin-top: 60px;
+  margin-bottom: 0px;
+  width: 100%;          
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 0px;      
+  padding-bottom: 0px; 
+}

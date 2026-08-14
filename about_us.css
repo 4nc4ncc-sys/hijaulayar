@@ -1,0 +1,439 @@
+:root{
+    --green--: #71BE46;
+    --grey--: #606161;
+    --white--: #ffffff;
+}
+
+/* Fix: body dibuat 100% & overflow-x hidden agar tidak overflow/terlalu lebar */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'hanken grotesk', sans-serif;
+  background: #fff;
+}
+
+/* === HEADER KAMU (SAMA SEPERTI ASLI) === */
+.site-header {
+  position: fixed;    /* kalau mau nempel di atas */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 999;       /* biar di atas konten lain */
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1134px;
+    top: 32px;
+    margin-top: 0px;
+    z-index: 100;
+    padding: 10px;
+}
+
+nav img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-left: 60px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+nav ul li a{
+    font-family: "hanken grotesk", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+
+/* Fix: background-size pakai cover agar image full layar */
+.about {
+  position: relative; 
+  width: 100vw;
+  height: 100vh;                                  /* full satu layar */
+  background: url(images/about.jpg) no-repeat center center / cover; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.whoarewe {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  background: url(images/who.jpg) no-repeat center center / cover;
+  margin-top: -35px;
+  padding: 0 80px;
+  box-sizing: border-box;
+}
+
+.who-left {
+  width: 48%;
+}
+
+.who-left h2 {
+  font-size: 48px;
+  color: #71BE46; /* hijau */
+  margin-bottom: 20px;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 500;
+}
+
+.who-left p {
+  font-size: 24px;
+  line-height: 1.2; /* Fix koma jadi titik */
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color:#606161 ;
+  font-style: italic;
+}
+
+.who-left h3 {
+  font-size: 24px;
+  line-height: 1.2;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 15px;
+  margin-left: 60px;
+  color: #606161;
+}
+
+.highlight-green {
+  color: #71BE46;
+  font-weight: 500;
+  text-decoration: underline; /* underline hijau */
+}
+
+.highlight-black {
+  color: #000;
+  font-weight: 500;
+  text-decoration: underline; /* underline hijau */
+}
+
+/* team */
+
+@font-face {
+    font-family: 'Qwerty Ability';
+    src: url('images/Qwerty-Ability.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'King Sans';
+    src: url('images/KingSans-FREE.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Sign Painter';
+    src: url('images/SignPainterHouseScript.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Manstein';
+    src: url('images/Manstein.woff2') format('woff2');
+}
+
+/* === SECTION CONTAINER === */
+.cards-section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 100px;
+    box-sizing: border-box;
+    background: url(images/muka.png);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* === GRID SYSTEM === */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+/* === CONTAINER KARTU === */
+.card-container {
+    position: relative;
+    width: 100%;
+    max-width: 253px;
+    height: 360px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling Umum Kartu */
+.card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    transition: opacity 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+/* KARTU KIRI (Default) */
+.card-left {
+    opacity: 1;
+    z-index: 3;
+}
+
+/* KARTU KANAN (Hover) */
+.card-right {
+    opacity: 0;
+    z-index: 4;
+}
+
+/* Efek Hover Swap */
+.card-container:hover .card-left {
+    opacity: 0;
+}
+
+.card-container:hover .card-right {
+    opacity: 1;
+}
+
+/* === TIPOGRAFI === */
+.text-neon {
+    color: #43e637;
+    font-size: 24px;
+    font-family: 'King Sans', serif;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+    z-index: 3;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+
+.text-neon .initial {
+    font-family: 'Qwerty Ability';
+    font-size: 42px;
+    line-height: 0.5;
+    margin-right: -10px;
+    margin-top: 5px;
+    -webkit-text-stroke: 3px #292929;
+    paint-order: stroke fill;
+    stroke-linejoin: round;
+    z-index: 2;
+}
+
+.text-neon .initial1 {
+    font-family: 'Manstein';
+    font-size: 42px;
+    line-height: 0.5;
+    margin-right: -14px;
+    margin-top: 5px;
+    -webkit-text-stroke: 3px #292929;
+    paint-order: stroke fill;
+    stroke-linejoin: round;
+    z-index: 2;
+}
+
+.info-wrapper {
+    position: absolute;
+    bottom: -30px;
+    left: 24px;
+    width: 85%;
+    text-align: left;
+    z-index: 3;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.5s ease;
+}
+
+.card-container:hover .info-wrapper {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.text-desc, 
+.text-name {
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.5s ease;
+}
+
+.text-desc {
+    color: #fff;
+    font-size: 22px;
+    font-style: italic;
+    font-family: 'Sign Painter', serif;
+    bottom: 110px;
+    transition-delay: 0.1s;
+}
+
+.text-name {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 60px;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    bottom: 35px;
+    width: 100%;
+    text-align: center;
+    transition-delay: 0.2s;
+}
+
+.text-name1 {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    bottom: 35px;
+    width: 100%;
+    text-align: center;
+    transition-delay: 0.2s;
+    margin-bottom: 90px;
+}
+
+.card-container:hover .text-desc,
+.card-container:hover .text-name {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* === RESPONSIVE MEDIA QUERIES === */
+@media (max-width: 1220px) {
+    .cards-section {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .card-container {
+        max-width: 320px;
+        height: 420px;
+    }
+}
+
+/* footer */
+.footer {
+  height: 60vh;
+  background: #333;
+  color: #fff;
+  padding: 50px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.footer-left .logo {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-left .logo {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-left a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-center h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-center ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-center li {
+  margin-bottom: 10px;
+}
+
+.footer-right p {
+  font-size: 16px;
+  font-weight: medium;
+  color: #fff;
+}
+
+.footer hr {
+  border: 0;
+  border-top: 1px solid #fff;
+  margin: 0px 0;        
+  margin-top: 60px;
+  margin-bottom: 0px;
+  width: 100%;          
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 0px;      
+  padding-bottom: 0px; 
+}
+

@@ -1,0 +1,254 @@
+:root{
+    --green--: #71BE46;
+    --grey--: #606161;
+    --white--: #ffffff;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  overflow-x: hidden; /* cegah scroll horizontal */
+}
+
+/* default: sembunyikan menu di mobile */
+.site-header nav {
+  display: flex;
+  justify-content: space-between; /* kiri-kanan */
+  align-items: center;
+  padding: 12px 20px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+/* tombol hamburger */
+.menu-toggle {
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--green--);
+  order: 2; /* pastikan di kiri */
+}
+
+
+.logo {
+  order: 1; /* pastikan di kanan */
+  width: 80%;   /* kecilin ukuran logo */
+  height: auto;   /* biar proporsional */
+}
+
+.logo img {
+  width: 50px;   /* atur ukuran logo */
+  height: auto;  /* biar proporsional */
+  margin-top: 10px;
+}
+
+.nav-links {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #fff;
+  flex-direction: column;
+  padding: 60px 20px;
+  box-shadow: 2px 0 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  transform: translateX(-100%);
+  z-index: 1001;
+}
+
+
+.nav-links li {
+  margin: 15px 0;          /* jarak antar item */
+  list-style: none;        /* hilangin bullet */
+}
+
+.nav-links a {
+  text-decoration: none;   /* hilangin garis bawah */
+  font-family: 'Hanken Grotesk', sans-serif; /* font sesuai import */
+  font-size: 16px;         /* ukuran font */
+  font-weight: 700;        /* tebal sedang */
+  color: var(--green--);          /* warna teks */
+  display: block;          /* biar area klik full */
+  padding: 8px 0;          /* kasih ruang vertikal */
+}
+
+
+.nav-links.active {
+  display: flex;
+  transform: translateX(0);
+}
+
+/* overlay background */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 1000;
+}
+
+.overlay.active {
+  display: block;
+}
+
+/* cover */
+
+.cover {
+  position: relative; 
+  height: 25vh;                          /* full satu layar */
+  background: url(images/Cosm.jpg) no-repeat center top;
+  background-size: 120%;
+  width: none;
+  padding: 0px 20px;
+}
+
+.desc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 100px 100px;
+  font-family: 'Hanken Grotesk', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  height: auto;
+}
+
+/* Kiri */
+.desc-left {
+  flex: 1 1 45%;
+}
+
+.desc-left h1 {
+  font-size: 48px;
+  color:var(--green--); /* hijau brand */
+}
+
+.desc-left p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--grey--);
+}
+
+/* Kanan */
+.desc-right {
+  flex: 1 1 45%;
+}
+
+.desc-right h2 {
+  font-size: 22px;
+  color: var(--grey--);
+}
+
+.desc-right p {
+  font-size: 16px;
+  color: var(--grey--);
+}
+
+.scope-grid {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.scope-grid li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: var(--grey--);
+}
+
+
+/* Responsif */
+@media (max-width: 768px) {
+  .desc {
+    flex-direction: column;
+    padding: 0px 20px;
+  }
+
+  .desc-left,
+  .desc-right {
+    flex: 1 1 100%;
+  }
+}
+
+/*poster*/
+
+.poster {
+  position: relative; 
+  height: 50vh; /* penuh satu layar */
+  width: 100%;   /* isi penuh */
+  background: url("images/cosmposter.jpg") no-repeat center bottom;
+  background-size: 100%; /* gambar penuh */
+  display: flex;
+  align-items: center;    /* konten di tengah vertikal */
+  justify-content: center;/* konten di tengah horizontal */
+}
+
+.post {
+  /* kalau mau isi konten di atas poster */
+  color: #fff;
+  font-size: 24px;
+}
+
+/*footer*/
+
+.footer {
+  padding: 30px 10px;
+  background-color: #333;
+  color: var(--white--);
+  font-family: 'Hanken Grotesk',sans-serif;
+}
+
+.footer-left .logo {
+  width: 40px;          /* atur ukuran logo */
+  height: auto;
+}
+
+.footer-left a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-top {
+  display: flex-start;
+  flex-direction: column;   /* ditumpuk vertikal */
+  align-items: center;
+  text-align: center;
+}
+
+.footer-center {
+  display: none;   /* sembunyikan seluruh blok Services */
+}
+
+.footer-center ul {
+  display: inline-block;
+  text-align: left;
+}
+
+.footer-right {
+  display: none;   /* cuma bagian kanan yang di-hide */
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between; /* kiri & kanan */
+  align-items: center;
+  padding-top: 10px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.footer-bottom-left {
+  text-align: left;
+}
+
+.footer-bottom-right {
+  text-align: right;
+}
+

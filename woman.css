@@ -1,0 +1,278 @@
+:root{
+    --green--: #71BE46;
+    --grey--: #606161;
+    --white--: #ffffff;
+}
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  margin: 0;
+  padding: 0;  flex-direction: column; /* biar tiap section stack vertikal */
+}
+
+.site-header {
+  position: fixed;    /* kalau mau nempel di atas */
+  display: flex;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 999;       /* biar di atas konten lain */
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1134px;
+    top: 32px;
+    margin-top: 0px;
+    z-index: 100;
+    padding: 10px;
+}
+
+nav img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-left: 60px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+nav ul li a{
+    font-family: "hanken grotesk", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+/*cover*/
+
+.cover {
+  height: 100vh;
+  background: linear-gradient(to top, #F9AFBE, transparent, transparent, transparent),url(images/women.png);
+  background-size: cover;
+  justify-content: space-between;   /* geser ke kanan */
+  align-items: center;         /* rata tengah vertikal */
+  font-family: 'Hanken Grotesk', sans-serif;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px;
+  margin-top: 70px;
+}
+
+/*description*/
+
+.wo-section {
+  display: flex;
+  align-items: stretch;   /* tinggi kiri–kanan sama */
+  align-content: center;
+  gap: 40px;
+  padding: 80px 80px;
+  background: #F9AFBE;
+  color: grey;
+  font-family: 'hanken grotexk', sans-serif;
+}
+
+.wo-section h1 {
+  color: #3D72B8; /* biru tua elegan */
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: medium;
+}
+
+.wo-section .left {
+  flex: 1;
+}
+
+.wo-section .right {
+  flex: 1;
+  max-width: 600px;
+}
+
+.wo-section .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* konten atas & bawah sejajar */
+  margin-top: 64px;
+}
+
+.scope-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+  grid-template-rows: repeat(2, auto);   /* 2 baris */
+  gap: 10px 30px;                        /* jarak antar item */
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+/*fintalk*/
+
+.fintalk-section {
+  display: flex;
+  align-items: stretch;   /* tinggi kiri–kanan sama */
+  gap: 40px;
+  padding: 40px 80px;
+  background: linear-gradient(to bottom, #F9AFBE, #fff, #fff,#fff,#fff);
+}
+
+.fintalk-section .left {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* teks + gambar ditumpuk */
+  justify-content: flex-start;
+  line-height: 1.6;
+}
+
+.fintalk-section .left h1 {
+  color: #3D72B8; /* biru untuk judul */
+  margin-bottom: 0px;
+}
+
+.fintalk-section .left p {
+  color: grey;
+}
+
+.fintalk-section .screenshot {
+  margin-top: 20px;
+}
+
+.fintalk-section .screenshot img {
+  width: 113%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.fintalk-section .right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fintalk-section .right img {
+  width: 76%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .fintalk-section {
+    flex-direction: column;
+  }
+}
+
+
+/*review*/
+
+.review {
+  position: relative; 
+  height: 100vh;                          /* full satu layar */
+  background: url(images/review.png) no-repeat center center;
+  background-size: cover;                 /* gambar penuh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 60px;
+}
+
+/* footer */
+
+.footer {
+  height: 60vh;               /* full satu layar */
+  background: #333;            /* dark theme */
+  color: #fff;
+  padding: 50px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* konten atas & bawah */
+  font-family: Arial, sans-serif;
+}
+
+.footer-left .logo {
+  width: 50px;          /* atur ukuran logo */
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-left .logo {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-left a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-right a {
+  color: #fff;          /* hijau */
+  text-decoration: none;   /* hilangkan garis bawah */
+  font-weight: bold;
+}
+
+.footer-right a:hover {
+  text-decoration: underline; /* efek hover */
+  color: #fff;             /* hijau lebih gelap saat hover */
+}
+
+.footer-center h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-center ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-center li {
+  margin-bottom: 10px;
+}
+
+.footer-right p {
+  font-size: 16px;
+  font-weight: medium;
+  color: #fff;
+}
+
+.footer hr {
+  border: 0;
+  border-top: 1px solid #fff;
+  margin: 0px 0;        
+  margin-top: 60px;
+  margin-bottom: 0px;
+  width: 100%;          
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 0px;      
+  padding-bottom: 0px; 
+}

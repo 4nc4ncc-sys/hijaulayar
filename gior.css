@@ -1,0 +1,351 @@
+:root{
+    --green--: #71BE46;
+    --grey--: #606161;
+    --white--: #ffffff;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'hanken grotesk', sans-serif;
+  background: #fff;
+}
+
+.site-header {
+  position: fixed;    /* kalau mau nempel di atas */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 999;       /* biar di atas konten lain */
+}
+
+.menu-toggle {
+  display: none; /* tombol hamburger disembunyiin di desktop */
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1134px;
+    top: 32px;
+    margin-top: 0px;
+    z-index: 100;
+    padding: 10px;
+}
+
+nav img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-left: 60px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+nav ul li a{
+    font-family: "hanken grotesk", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.giorando {
+  position: relative; 
+  height: 100vh;                          /* full satu layar */
+  background: url(images/gior.jpg) no-repeat center center;
+  background-size: cover;                 /* gambar penuh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  padding: 0px 60px;
+}
+
+/* profile */
+
+.profile {
+  display: flex;
+  align-items: flex-start; /* foto dan teks sejajar atas */
+  gap: 0px;
+  padding: 60px 80px;
+  background: #fff;
+  font-family: 'Hanken Grotesk', sans-serif;
+  color: #606161;
+}
+
+/* kiri */
+.profile-left {
+  width: 300px; /* lebar tetap untuk foto */
+}
+
+.profile-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  padding: 5px;
+  background: linear-gradient(135deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5); /* ring gradasi ala Instagram */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* kanan */
+.profile-right {
+  flex: 1;
+}
+
+.name {
+  font-size: 48px;
+  color: #71BE46;
+  font-weight: 1000;
+  margin: 0;
+}
+
+.fullname {
+  font-size: 24px;
+  color: #71BE46;
+  font-weight: 400;
+  margin: 5px 0 20px;
+}
+
+.desc {
+  font-size: 16px;
+  line-height: 32px;
+  margin-bottom: 30px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 10px;
+}
+
+.scope, .goal {
+  flex: 1;
+}
+
+.scope h4,
+.goal h4 {
+  font-size: 20px;
+  color: #71BE46;
+  margin-bottom: 10px;
+}
+
+/* bikin list scope jadi 2 kolom */
+.scope ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 kolom */
+  gap: 8px 20px;                 /* jarak antar item */
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.scope li {
+  margin: 0;
+}
+
+.goal p {
+  font-size: 16px;
+  color: #606161;
+  margin: 0;
+}
+
+/* reach */
+
+.metric {
+  height: 100vh;
+  background: url(images/ggior.jpg) no-repeat center center/cover;
+  display: flex;
+  justify-content: space-between;   /* geser ke kanan */
+  align-items: center;         /* rata tengah vertikal */
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.metric-right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-right: 150px;
+  margin-top: 135px;
+}
+
+.label{
+  font-size: 22px;
+  font-weight: 300;
+  color: #606161;
+  text-align: left;  
+  margin-bottom: -40px;
+  text-indent: 100px;   /* jarak masuk di awal baris */
+}
+
+.value {
+  font-size: 128px;
+  font-weight: 1000;
+  color: #71BE46;
+  margin: 0;
+  line-height: 1;     /* pas dengan tinggi font */
+}
+
+.sub,
+.desc {
+  font-weight: 300;
+  font-size: 20px;
+  color: #606161;
+  margin: 0;
+  line-height: 1.5;   /* jangan 0, pakai 1–1.2 */
+}
+
+/* video */
+
+.video-grid {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr); /* tetap 3 video */
+  gap: 20px;
+  padding: 0px 20px;
+  justify-content: center;
+}
+
+.video-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+}
+
+video {
+  aspect-ratio: 9/16;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #71BE46; /* hijau sesuai contoh */
+}
+
+.stat-item i {
+  font-size: 16px;
+}
+
+/*review*/
+.review {
+  position: relative; 
+  height: 100vh;                          /* full satu layar */
+  background: url(images/review.png) no-repeat center center;
+  background-size: cover;                 /* gambar penuh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0px 60px;
+}
+
+/* footer */
+
+.footer {
+  height: 60vh;               /* full satu layar */
+  background: #333;            /* dark theme */
+  color: #fff;
+  padding: 50px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* konten atas & bawah */
+  font-family: Arial, sans-serif;
+}
+
+.footer-left .logo {
+  width: 50px;          /* atur ukuran logo */
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-left .logo {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-left a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-center h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-center ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-center li {
+  margin-bottom: 10px;
+}
+
+.footer-right p {
+  font-size: 16px;
+  font-weight: medium;
+  color: #fff;
+}
+
+.footer hr {
+  border: 0;
+  border-top: 1px solid #fff;
+  margin: 0px 0;        
+  margin-top: 60px;
+  margin-bottom: 0px;
+  width: 100%;          
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 0px;      
+  padding-bottom: 0px; 
+}
+

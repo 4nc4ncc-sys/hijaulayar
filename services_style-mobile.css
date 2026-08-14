@@ -1,0 +1,409 @@
+:root{
+    --green--: #71BE46;
+    --grey--: #606161;
+    --white--: #ffffff;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  overflow-x: hidden; /* cegah scroll horizontal */
+}
+
+/* default: sembunyikan menu di mobile */
+.site-header nav {
+  display: flex;
+  justify-content: space-between; /* kiri-kanan */
+  align-items: center;
+  padding: 12px 20px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+/* tombol hamburger */
+.menu-toggle {
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--green--);
+  order: 2; /* pastikan di kiri */
+}
+
+
+.logo {
+  order: 1; /* pastikan di kanan */
+  width: 80%;   /* kecilin ukuran logo */
+  height: auto;   /* biar proporsional */
+}
+
+.logo img {
+  width: 50px;   /* atur ukuran logo */
+  height: auto;  /* biar proporsional */
+  margin-top: 10px;
+}
+
+.nav-links {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #fff;
+  flex-direction: column;
+  padding: 60px 20px;
+  box-shadow: 2px 0 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  transform: translateX(-100%);
+  z-index: 1001;
+}
+
+
+.nav-links li {
+  margin: 15px 0;          /* jarak antar item */
+  list-style: none;        /* hilangin bullet */
+}
+
+.nav-links a {
+  text-decoration: none;   /* hilangin garis bawah */
+  font-family: 'Hanken Grotesk', sans-serif; /* font sesuai import */
+  font-size: 16px;         /* ukuran font */
+  font-weight: 700;        /* tebal sedang */
+  color: var(--green--);          /* warna teks */
+  display: block;          /* biar area klik full */
+  padding: 8px 0;          /* kasih ruang vertikal */
+}
+
+
+.nav-links.active {
+  display: flex;
+  transform: translateX(0);
+}
+
+/* overlay background */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 1000;
+}
+
+.overlay.active {
+  display: block;
+}
+
+/*hero*/
+
+.header {
+  position: relative;
+  height: 100vh;                          /* full satu layar */
+  background: url(images/serv.png) no-repeat center center;
+  background-size: 100%;                 /* gambar penuh */
+}
+
+
+/*Services*/
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 20px;
+  background: #fff; /* putih sesuai gambar */
+  flex-direction: column;
+}
+
+.social-left {
+  position: relative;
+  width: 350px;
+  justify-content: center;
+  align-items: center;
+}
+
+.statue {
+  width: 95%;
+}
+
+.icons {
+  position: absolute;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+
+.social-right {
+  width: 100%;
+}
+
+.social-right h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'hanken grotesk';
+}
+
+.social-right p {
+  font-size: 16px;
+  line-height: 1.3;
+  font-family: 'hanken grotesk';
+  text-align: justify;
+}
+
+
+/*digital marketing*/
+
+.digital-marketing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 20px;
+  flex-direction: column-reverse;
+}
+
+.dm-left {
+  width: 100%;
+}
+
+.dm-left h2 {
+  font-size: 24px;
+  font-family: 'hanken grotesk';
+}
+
+.dm-left p {
+  font-size: 16px;
+  line-height: 1.3;
+  font-family: 'hanken grotesk';
+  text-align: justify;
+}
+
+.dm-right {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.statue1 {
+  max-width: 115%;
+}
+
+
+/*branding*/
+
+.branding {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 20px;
+  background: #fff; /* putih sesuai gambar */
+  flex-direction: column;
+}
+
+.branding-left {
+  position: relative;
+}
+
+.brnstatu {
+  width: 100%;
+}
+
+
+.branding-right {
+  width: 100%;
+}
+
+.branding-right h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'hanken grotesk';
+}
+
+.branding-right p {
+  font-size: 16px;
+  line-height: 1.3;
+  font-family: 'hanken grotesk';
+  text-align: justify;
+}
+
+
+/*project*/
+
+.projects {
+  padding: 20px;
+  text-align: center;
+  font-family: 'Hanken Grotesk',sans-serif;
+
+}
+
+.projects h2 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: var(--green--);
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column; /* vertikal di mobile */
+  gap: 20px;
+  align-items: center;
+}
+
+.project-box {
+  width: 100%;
+  max-width: 300px; /* biar pas di layar HP */
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.project-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-box.view-more {
+  background-color: #888; /* abu-abu */
+}
+
+
+.project-box.view-more p a {
+  color: var(--white--);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.explore-text p {
+  font-size: 18px;
+  color: green;
+  margin-top: 20px;
+}
+
+.explore-text span {
+  font-size: 14px;
+  color: #333;
+}
+
+/*sail*/
+
+.sail {
+  padding: 20px;
+  font-family: 'Hanken Grotesk', sans-serif;
+  background-color: var(--green--);
+}
+
+.sail-content {
+  display: flex;
+  flex-direction: column;   /* langsung vertikal */
+  gap: 20px;
+}
+
+.sail-left p {
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+.sail-right {
+  background: rgba(255,255,255,0.95);   /* kasih background putih transparan */
+  padding: 20px;                        /* ruang dalam */
+  border-radius: 10px;                  /* sudut melengkung */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* efek bayangan */
+  width: 100%;                          /* full lebar di mobile */
+  max-width: 280px;                     /* batas maksimal */
+}
+
+.sail-right h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.sail-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sail-right input,
+.sail-right button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.sail-right button {
+  background: #606161;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sail-right button:hover {
+  background: #333;
+}
+
+
+
+/*footer*/
+
+.footer {
+  padding: 30px 10px;
+  background-color: #333;
+  color: var(--white--);
+  font-family: 'Hanken Grotesk',sans-serif;
+}
+
+.footer-left .logo {
+  width: 40px;          /* atur ukuran logo */
+  height: auto;
+}
+
+.footer-left a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-top {
+  display: flex-start;
+  flex-direction: column;   /* ditumpuk vertikal */
+  align-items: center;
+  text-align: center;
+}
+
+.footer-center {
+  display: none;   /* sembunyikan seluruh blok Services */
+}
+
+.footer-center ul {
+  display: inline-block;
+  text-align: left;
+}
+
+.footer-right {
+  display: none;   /* cuma bagian kanan yang di-hide */
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between; /* kiri & kanan */
+  align-items: center;
+  padding-top: 10px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.footer-bottom-left {
+  text-align: left;
+}
+
+.footer-bottom-right {
+  text-align: right;
+}

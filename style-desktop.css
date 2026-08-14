@@ -1,0 +1,680 @@
+:root{
+    --green--: #71BE46;
+    --grey--: #606161;
+    --white--: #ffffff;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'hanken grotesk', sans-serif;
+  background: #fff;
+  min-width: 1200px;   /* biar layout nggak pecah */
+  overflow-x: auto;   /* biar bisa geser, nggak kepotong */
+}
+
+
+.site-header {
+  position: fixed;    /* kalau mau nempel di atas */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 999;       /* biar di atas konten lain */
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1134px;
+    top: 32px;
+    margin-top: 0px;
+    z-index: 100;
+    padding: 10px;
+}
+
+nav img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-left: 60px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+nav ul li a{
+    font-family: "hanken grotesk", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu-toggle {
+  display: none; /* tombol hamburger disembunyiin di desktop */
+}
+
+/* hero section */
+
+.hero-section{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section h1{
+    display: flex;
+}
+
+.hero-section img{
+    height: 50px;
+    vertical-align: middle;
+    margin-top: 10px;
+    
+}
+
+.hero-section p{
+    display: flex;
+    width: 100%;
+    font-family: "hanken grotesk", sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    color: #71BE46;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.blur-text {
+  color: var(--green--);
+  filter: blur(10px);
+  image-rendering: pixelated;
+  -webkit-background-clip: text;   /* clip background ke bentuk teks */
+  background-clip: text;
+  transition: filter 0.3s ease;
+  cursor: pointer;
+  display: inline-block; /* bikin span berdiri sendiri */
+  margin-left: 15px;      /* kasih jarak dari kata sebelumnya */
+}
+
+.blur-text::after {
+  content: "So... we make them clear";
+  position: absolute;
+  right: 0;                 /* rata kanan dengan teks */
+  top: 100%;                /* mulai agak di bawah */
+  background: var(--green--);
+  color: white;
+  padding: 8px 12px;
+  margin-top: 10px;
+  border-radius: 24px;
+  white-space: nowrap;
+  font-size: 21px;
+  opacity: 0;               /* awalnya invisible */
+  transform: translateY(20px); /* geser ke bawah */
+  transition: all 0.4s ease;
+}
+
+.blur-text:hover::after {
+  opacity: 1;               /* fade in */
+  transform: translateY(0); /* slide up */
+}
+
+.blur-text:hover {
+  filter: blur(0);
+}
+
+/* why you here */
+
+.why-you-here{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.why-you-here .wrapper{
+    position: relative;
+    width: 100%;
+    align-self: flex-end;
+}
+
+.why-you-here .left .image-orang{
+    position: relative;
+    height: 450px;
+    top: 177px;
+    left: 50px;
+    align-self: self-end;
+}
+
+.why-you-here .right .image-text{
+    display: flex;
+    width: 100%;
+    position: relative;
+    height: 50px;
+    align-items: center;
+    align-content: center;
+    top: -200px;
+    left: 380px;
+    margin-bottom: 10px;
+}
+
+.why-you-here .right h3{
+    display: flex;
+    width: 100%;
+    font-family: "hanken grotesk", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    position: relative;
+    top: -200px;
+    left: 450px;
+    margin-top: 30px;
+}
+
+.why-you-here .right p{
+    display: flex;
+    width: 100%;
+    font-family: "hanken grotesk", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: right;
+    position: relative;
+    top: -180px;
+    left: 785px;
+}
+
+/* what are we */
+
+.what-are-we{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.what-are-we .left{
+    display: flex;
+    justify-content: center;
+}
+
+.what-are-we .left h3{
+    display: flex;
+    font-family: "hanken grotesk", sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    width: 350px;
+    position: relative;
+    left: 150px;
+    color: #71BE46;
+}
+
+.what-are-we .left p{
+    display: flex;
+    font-family: "hanken grotesk", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    width: 400px;
+    position: relative;
+    top: 10px;
+    left: 250px;
+    text-align: left;
+    color: #606161;
+}
+
+.what-are-we .right img{
+    position: relative;
+    width: 80%;
+}
+
+.image-latar{
+    width: 100%;
+    top: 237px;
+    left: 180px;
+}
+
+.image-circle{
+    position: relative;
+    height: 400px;
+    top: -230px;
+    left: 170px;
+    width: 3%;
+}
+
+/* services */
+
+.services {
+  position: relative;
+  text-align: center;
+  font-family: 'Hanken Grotesk', sans-serif;
+  color: var(--grey--);
+  height: 70vh;
+  padding: 80px 100px;
+  background-image: url("images/pilar.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.main-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 95px;
+  margin-top: -35px;
+  color: var(--grey--);
+}
+
+.blocks {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.block {
+  width: 220px;
+  text-align: center;
+}
+
+.flip-box {
+  perspective: 10000px;
+  width: 100%;
+  height: 300px;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front, .flip-back {
+  position: absolute;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.flip-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.flip-back {
+  background: var(--green--); /* hijau biar mirip contoh */
+  color: #000;
+  padding: 20px;
+  height: 245px;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box; /* padding tetap masuk */
+}
+
+.flip-back ul {
+  list-style: disc;   /* aktifin bullet */
+  padding-left: 20px; /* kasih jarak biar bullet keliatan */
+  margin: 0;
+  text-align: left;
+}
+
+.flip-back li {
+  margin: 8px 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+}
+
+.flip-back a {
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: bold;
+}
+.flip-back a:hover {
+  text-decoration: underline;
+}
+
+.block-title {
+  margin-top: -350px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1A5B2E;
+}
+
+/* client */
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "hanken grotesk", sans-serif
+}
+
+.clients {
+  height: 80vh;             
+  display: flex;
+  flex-direction: column;
+  justify-content: center;    
+  align-items: center;      
+  background: #fff;          
+  text-align: center;
+  padding: 20px;
+}
+
+.clients h2 {
+  color: var(--green--);
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+
+}
+
+.slider-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 40px;
+  transition: transform 0.3s ease;
+  margin: 0 10px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+/* masing-masing card pakai background image */
+.card1 { background-image: url("images/logo1.png"); }
+.card2 { background-image: url("images/logo2.png"); }
+.card3 { background-image: url("images/logo3.png"); }
+.card4 { background-image: url("images/logo4.png"); }
+.card5 { background-image: url("images/logo5.png"); }
+.card6 { background-image: url("images/logo6.png"); }
+.card7 { background-image: url("images/logo7.png"); }
+.card8 { background-image: url("images/logo8.png"); }
+.card9 { background-image: url("images/logo9.png"); }
+.card10 { background-image: url("images/logo10.png"); }
+.card11 { background-image: url("images/logo11.png"); }
+.card12 { background-image: url("images/logo12.png"); }
+.card13 { background-image: url("images/logo13.png"); }
+.card14 { background-image: url("images/logo14.png"); }
+.card15 { background-image: url("images/logo15.png"); }
+
+@keyframes scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* geser sepanjang set pertama */
+}
+
+
+/* work */
+
+.projects {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;   
+  padding: 0px 100px;       
+}
+
+
+
+.projects h2 {
+  font-size: 32px;
+  font-weight: 500;
+  color: green;
+  margin-bottom: 40px;
+  text-align: left;          
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;   
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.project-box {
+  width: 300px;
+  height: 236px;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.project-box.view-more {
+  font-weight: 300;
+  font-size: larger;
+  color: #333;
+  cursor: pointer;
+  text-align: center;
+  background-color: #dcdcdc;
+}
+
+.project-box.view-more a {
+  text-decoration: none;   /* hilangin garis bawah */
+  color: inherit;          /* pakai warna teks parent, bukan biru default */
+}
+
+.explore-text {
+  text-align: left;          
+  max-width: 600px;
+}
+
+.explore-text p {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--green--);
+  margin: 0;
+}
+
+.explore-text span {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--grey--);
+}
+
+/* sail */
+
+.sail {
+  position: relative; 
+  height: 100vh;                          /* full satu layar */
+  background: url(images/Saill.jpg) no-repeat center center;
+  background-size: cover;                 /* gambar penuh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 80px;
+}
+
+.sail-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.sail-left {
+  flex: 1;
+  color: #333;                            /* teks kontras dengan bg */
+  text-align: left;
+  padding-right: 40px;
+}
+
+.sail-left h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.sail-left p {
+  font-size: 20px;
+  font-weight: lighter;
+  max-width: 300px;
+}
+
+.sail-right {
+  position: absolute;                     /* posisikan bebas */
+  bottom: 130px;                           /* jarak dari bawah */
+  right: 130px;                            /* jarak dari kanan */
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 300px;
+}
+
+.sail-right h3 {
+  font-family: "hanken grotesk"sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.sail-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sail-right input {
+  width: 180px;
+  max-width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.sail-right button {
+  padding: 12px;
+  background: var(--green--);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.sail-right button:hover {
+  background: #2e8b57;
+}
+
+/* footer */
+
+.footer {
+  height: 60vh;               /* full satu layar */
+  background: #333;            /* dark theme */
+  color: #fff;
+  padding: 50px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* konten atas & bawah */
+  font-family: Arial, sans-serif;
+}
+
+.footer-left .logo {
+  width: 50px;          /* atur ukuran logo */
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-left .logo {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-left a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-center h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-center ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-center li {
+  margin-bottom: 10px;
+}
+
+.footer-right p {
+  font-size: 16px;
+  font-weight: medium;
+  color: #fff;
+}
+
+.footer hr {
+  border: 0;
+  border-top: 1px solid #fff;
+  margin: 0px 0;        
+  margin-top: 60px;
+  margin-bottom: 0px;
+  width: 100%;          
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 0px;      
+  padding-bottom: 0px; 
+}
+

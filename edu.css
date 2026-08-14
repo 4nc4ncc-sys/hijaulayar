@@ -1,0 +1,269 @@
+:root{
+    --green--: #71BE46;
+    --grey--: #606161;
+    --white--: #ffffff;
+}
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* biar tiap section stack vertikal */
+}
+
+.site-header {
+  position: fixed;    /* kalau mau nempel di atas */
+  display: flex;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 999;       /* biar di atas konten lain */
+}
+
+.menu-toggle {
+  display: none; /* tombol hamburger disembunyiin di desktop */
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1134px;
+    top: 32px;
+    margin-top: 0px;
+    z-index: 100;
+    padding: 10px;
+}
+
+nav img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-left: 60px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+nav ul li a{
+    font-family: "hanken grotesk", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+/* cover */
+
+.cover {
+  display: flex;
+  justify-content: flex-start;   /* konten di tengah horizontal */
+  align-items: center;       /* konten di tengah vertikal */
+  background-color: #6FC6E2;
+  margin-top: 70px;
+  background: linear-gradient(to bottom, #70C7E3,#6DC3DE, #6BC1DC);
+  z-index: 666;       /* biar di atas konten lain */
+}
+
+.edu {
+  width: 90%;        /* container setengah lebar */
+}
+
+.edu img {
+  width: 100%;       /* gambar isi penuh container */
+  height: auto;
+  display: block;
+}
+
+/*edukar*/
+
+.eduk {
+    height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #69BAD5, #6ABEDA);
+  color: #fff;
+  font-family: 'Hanken Grotesk', sans-serif;
+  margin-top: -250px;
+  padding: 60px 80px;
+}
+
+.eduk-left {
+  width: 50%;
+  z-index: 888;       /* biar di atas konten lain */
+}
+
+.eduk-left h1 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.eduk-left p {
+  line-height: 1.6;
+  font-size: 16px;
+  color: #606161;
+  margin-bottom: 40px;
+}
+
+.eduk-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column; /* bikin isi vertikal */
+  align-items: flex-start; /* biar teks rata kiri */
+  z-index: 777;       /* biar di atas konten lain */
+  margin-left: 20px;
+  margin-top: 55px;
+}
+
+.eduk-right h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #606161;
+  margin-bottom: 18px;
+}
+
+.scope-grid {
+  display: grid;
+  color: #606161;
+  grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+  grid-template-rows: repeat(2, auto);   /* 2 baris */
+  gap: 8px 30px; /* jarak antar item */
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0 0 20px 0;
+}
+
+.scope-grid li {
+  font-weight: 500;
+}
+
+.laptop {
+  align-self: flex-end; /* geser ke kanan bawah */
+  width: 500px;
+  z-index: 777;       /* biar di atas konten lain */
+  margin-left: -650px;
+  margin-bottom: -60px;
+}
+
+.laptop img{
+width: 350px;
+height: auto;
+}
+
+/*edd*/
+
+.edd {
+  height: 100vh;
+  background: url(images/edd.png);
+  justify-content: space-between;   /* geser ke kanan */
+  align-items: center;         /* rata tengah vertikal */
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+/*review*/
+
+.review {
+  position: relative; 
+  height: 100vh;                          /* full satu layar */
+  background: url(images/review.png) no-repeat center center;
+  background-size: cover;                 /* gambar penuh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 60px;
+}
+
+/* footer */
+
+.footer {
+  height: 60vh;               /* full satu layar */
+  background: #333;            /* dark theme */
+  color: #fff;
+  padding: 50px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* konten atas & bawah */
+  font-family: Arial, sans-serif;
+}
+
+.footer-left .logo {
+  width: 50px;          /* atur ukuran logo */
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-left .logo {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-left a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-right a {
+  color: #fff;          /* hijau */
+  text-decoration: none;   /* hilangkan garis bawah */
+  font-weight: bold;
+}
+
+.footer-right a:hover {
+  text-decoration: underline; /* efek hover */
+  color: #fff;             /* hijau lebih gelap saat hover */
+}
+
+.footer-center h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-center ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-center li {
+  margin-bottom: 10px;
+}
+
+.footer-right p {
+  font-size: 16px;
+  font-weight: medium;
+  color: #fff;
+}
+
+.footer hr {
+  border: 0;
+  border-top: 1px solid #fff;
+  margin: 0px 0;        
+  margin-top: 60px;
+  margin-bottom: 0px;
+  width: 100%;          
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 0px;      
+  padding-bottom: 0px; 
+}

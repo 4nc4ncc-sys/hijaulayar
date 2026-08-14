@@ -1,0 +1,363 @@
+:root{
+    --green--: #71BE46;
+    --grey--: #606161;
+    --white--: #ffffff;
+}
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  margin: 0;
+  padding: 0;  flex-direction: column; /* biar tiap section stack vertikal */
+}
+
+.site-header {
+  position: fixed;    /* kalau mau nempel di atas */
+  display: flex;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 999;       /* biar di atas konten lain */
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1134px;
+    top: 32px;
+    margin-top: 0px;
+    z-index: 100;
+    padding: 10px;
+}
+
+nav img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-left: 60px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+nav ul li a{
+    font-family: "hanken grotesk", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+
+/*cover*/
+.cover {
+  height: 100vh;
+  width: 100%;
+  background: url(images/mimir.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* box geser ke kanan */
+  margin-top: 70px;
+}
+
+.cover-box {
+  background: rgba(255,255,255,0.9); /* putih semi transparan */
+  padding: 30px;
+  max-width: 400px;
+  font-family: 'Hanken Grotesk', sans-serif;
+  color: #333;
+  margin-right: 150px;
+}
+
+.cover-box .logo {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.cover-box h1 {
+  font-size: 32px;
+  font-weight: 500;
+  margin: 0 0 15px 0;
+  color: var(--grey--);
+}
+
+.cover-box h2 {
+  font-size: 16px;
+  margin: 0 0 15px 0;
+  color: var(--grey--);
+}
+
+.cover-box p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.cover-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cover-box ul li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 16px;
+}
+
+.cover-box ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--grey--);
+}
+
+.scope {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+  gap: 1px 24px; /* jarak antar baris & kolom */
+  margin-top: 20px;
+}
+
+.point {
+  font-size: 14px;
+  color: #333;
+  font-family: 'Hanken Grotesk', sans-serif;
+  background: rgba(255,255,255,0.8);
+  padding: 8px 12px;
+}
+
+.scope li {
+  font-size: 14px;
+  color: #333;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.logo-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* logo tetap di kanan */
+}
+
+.logo {
+  height: 50px;
+}
+
+/*feed1*/
+
+.mim-presentation {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 2fr 1fr; /* kiri lebih lebar untuk posts */
+  gap: 40px;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 post sejajar */
+  gap: 20px;
+}
+
+.posts img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.info-box {
+  background: rgba(255,255,255,0.95);
+  padding: 30px;
+  border-radius: 8px;
+  font-family: 'Hanken Grotesk', sans-serif;
+  color: #333;
+}
+
+.logo-wrap {
+  display: flex;
+  justify-content: flex-end; /* logo tetap di kanan */
+  margin-bottom: 20px;
+}
+
+.logo {
+  height: 50px;
+}
+
+/*posting*/
+
+.posting {
+  display: flex;       /* kiri–kanan */
+  gap: 20px;
+  padding: 20px;
+  background: #fff;
+  height: auto;        /* biar nggak full screen */
+  margin-left: 32px;
+}
+
+.left {
+  width: 200px;        /* lebar banner kiri */
+  margin-top: -100px;
+}
+
+.overlay-box {
+  position: relative;
+  width: 100%;
+}
+
+.overlay-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.slid1 {
+  position: relative; /* tetap normal */
+  z-index: 2;         /* di atas */
+  width: 100%;
+  height: auto;
+}
+
+.slid2 {
+  position: absolute;
+  top: 100px;          /* geser turun */
+  left: 150px;
+  width: 100%;
+  height: auto;
+  z-index: 1;         /* di belakang */
+  opacity: 1;       /* biar kelihatan */
+}
+
+.right {
+  margin-top: -90px;
+  margin-left: 240px;                 /* nempel ke kanan */
+  width: 600px;                    /* atur lebar kontainer sesuai kebutuhan */
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 0;
+  row-gap: 60px;
+  justify-content: end;            /* dorong grid ke kanan */
+  align-items: center;
+}
+
+.right img {
+  width: 106%;                     /* isi penuh tiap kolom */
+  height: auto;
+  display: block;
+}
+
+.right img:nth-last-child(-n+4) {
+  margin-left: 30px;   /* geser ke dalam */
+}
+
+.frontslod {
+  z-index: 999;
+}
+
+/*review*/
+
+.review {
+  position: relative; 
+  height: 100vh;                          /* full satu layar */
+  background: url(images/review.png) no-repeat center center;
+  background-size: cover;                 /* gambar penuh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 60px;
+}
+
+/* footer */
+
+.footer {
+  height: 60vh;               /* full satu layar */
+  background: #333;            /* dark theme */
+  color: #fff;
+  padding: 50px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* konten atas & bawah */
+  font-family: Arial, sans-serif;
+}
+
+.footer-left .logo {
+  width: 50px;          /* atur ukuran logo */
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-left .logo {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-left a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-right a {
+  color: #fff;          /* hijau */
+  text-decoration: none;   /* hilangkan garis bawah */
+  font-weight: bold;
+}
+
+.footer-right a:hover {
+  text-decoration: underline; /* efek hover */
+  color: #fff;             /* hijau lebih gelap saat hover */
+}
+
+.footer-center h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-center ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-center li {
+  margin-bottom: 10px;
+}
+
+.footer-right p {
+  font-size: 16px;
+  font-weight: medium;
+  color: #fff;
+}
+
+.footer hr {
+  border: 0;
+  border-top: 1px solid #fff;
+  margin: 0px 0;        
+  margin-top: 60px;
+  margin-bottom: 0px;
+  width: 100%;          
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 0px;      
+  padding-bottom: 0px; 
+}

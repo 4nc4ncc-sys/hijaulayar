@@ -1,0 +1,265 @@
+:root{
+    --green--: #71BE46;
+    --grey--: #606161;
+    --white--: #ffffff;
+}
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* biar tiap section stack vertikal */
+}
+
+.site-header {
+  position: fixed;    /* kalau mau nempel di atas */
+  display: flex;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 999;       /* biar di atas konten lain */
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1134px;
+    top: 32px;
+    margin-top: 0px;
+    z-index: 100;
+    padding: 10px;
+}
+
+nav img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-left: 60px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+nav ul li a{
+    font-family: "hanken grotesk", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+/* cover */
+
+.cover {
+  position: relative; 
+  height: 100vh;                          /* full satu layar */
+  background: url(images/Cosm.jpg) no-repeat center center;
+  background-size: cover;                 /* gambar penuh */
+  display: flex;
+  width: none;
+  padding: 60px 80px;
+  margin-top: 60px;
+}
+
+/*decsription*/
+
+.desc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 100px 100px;
+  font-family: 'Hanken Grotesk', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  height: auto;
+}
+
+/* Kiri */
+.desc-left {
+  flex: 1 1 45%;
+}
+
+.desc-left h1 {
+  font-size: 48px;
+  color:var(--green--); /* hijau brand */
+  margin-bottom: 20px;
+}
+
+.desc-left p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: var(--grey--);
+}
+
+/* Kanan */
+.desc-right {
+  flex: 1 1 45%;
+  margin-top: 54px;
+}
+
+.desc-right h2 {
+  font-size: 22px;
+  color: var(--grey--);
+  margin-bottom: 15px;
+}
+
+.desc-right p {
+  font-size: 16px;
+  color: var(--grey--);
+  margin-bottom: 15px;
+}
+
+.scope-grid {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.scope-grid li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: var(--grey--);
+}
+
+
+/* Responsif */
+@media (max-width: 768px) {
+  .desc {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .desc-left,
+  .desc-right {
+    flex: 1 1 100%;
+  }
+}
+
+/*poster*/
+
+.poster {
+  position: relative; 
+  height: 160vh; /* penuh satu layar */
+  width: 100%;   /* isi penuh */
+  background: url("images/cosmposter.jpg") no-repeat center center;
+  background-size: cover; /* gambar penuh */
+  display: flex;
+  align-items: center;    /* konten di tengah vertikal */
+  justify-content: center;/* konten di tengah horizontal */
+}
+
+.post {
+  /* kalau mau isi konten di atas poster */
+  color: #fff;
+  font-size: 24px;
+}
+
+
+/*review*/
+
+.review {
+  position: relative; 
+  height: 100vh;                          /* full satu layar */
+  background: url(images/review.png) no-repeat center center;
+  background-size: cover;                 /* gambar penuh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 60px;
+}
+
+/* footer */
+
+.footer {
+  height: 60vh;               /* full satu layar */
+  background: #333;            /* dark theme */
+  color: #fff;
+  padding: 50px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* konten atas & bawah */
+  font-family: Arial, sans-serif;
+}
+
+.footer-left .logo {
+  width: 50px;          /* atur ukuran logo */
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-left .logo {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-left a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-right a {
+  color: #fff;          /* hijau */
+  text-decoration: none;   /* hilangkan garis bawah */
+  font-weight: bold;
+}
+
+.footer-right a:hover {
+  text-decoration: underline; /* efek hover */
+  color: #fff;             /* hijau lebih gelap saat hover */
+}
+
+.footer-center h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-center ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-center li {
+  margin-bottom: 10px;
+}
+
+.footer-right p {
+  font-size: 16px;
+  font-weight: medium;
+  color: #fff;
+}
+
+.footer hr {
+  border: 0;
+  border-top: 1px solid #fff;
+  margin: 0px 0;        
+  margin-top: 60px;
+  margin-bottom: 0px;
+  width: 100%;          
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 0px;      
+  padding-bottom: 0px; 
+}

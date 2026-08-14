@@ -1,0 +1,440 @@
+:root{
+    --green--: #71BE46;
+    --grey--: #606161;
+    --white--: #ffffff;
+}
+
+body {
+  font-family: 'hanken grotesk', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff; /* misalnya hitam biar nggak ada putih */
+}
+
+.site-header {
+  position: fixed;    /* kalau mau nempel di atas */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 999;       /* biar di atas konten lain */
+}
+
+.menu-toggle {
+  display: none; /* tombol hamburger disembunyiin di desktop */
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1134px;
+    top: 32px;
+    margin-top: 0px;
+    z-index: 100;
+    padding: 10px;
+}
+
+nav img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-left: 60px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+nav ul li a{
+    font-family: "hanken grotesk", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+
+/* hero */
+
+.header {
+  position: relative; 
+  height: 100vh;                          /* full satu layar */
+  background: url(images/serv.png) no-repeat center center;
+  background-size: cover;                 /* gambar penuh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0px 60px;
+}
+
+/* sosmed */
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 100px;
+  background: #fff; /* putih sesuai gambar */
+}
+
+.social-left {
+  position: relative;
+  width: 40%;
+}
+
+.statue {
+  width: 100%;
+  max-width: 350px;
+}
+
+.icons {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+
+.social-right {
+  width: 55%;
+}
+
+.social-right h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-family: 'hanken grotesk';
+}
+
+.social-right p {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: 'hanken grotesk';
+  text-align: justify;
+}
+
+
+/* digital marketing */
+
+.digital-marketing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 0px;
+  background: #fff; /* putih sesuai desain */
+  margin-left: 120px;
+}
+
+.dm-left {
+  width: 50%;
+}
+
+.dm-left h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-family: 'hanken grotesk';
+}
+
+.dm-left p {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: 'hanken grotesk';
+  text-align: justify;
+}
+
+.dm-right {
+  position: relative;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.statue1 {
+  width: 100%;
+  max-width: 350px;
+}
+
+
+
+/* branding */
+
+.branding {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 100px;
+  background: #fff; /* putih sesuai gambar */
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.branding-left {
+  position: relative;
+  width: 40%;
+}
+
+.brnstatu {
+  width: 100%;
+  max-width: 340px;
+}
+
+
+.branding-right {
+  width: 55%;
+}
+
+.branding-right h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-family: 'hanken grotesk';
+}
+
+.branding-right p {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: 'hanken grotesk';
+  text-align: justify;
+}
+
+
+/* project */
+
+.projects {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;   
+  background: #fff;
+  padding: 0px 80px;       
+}
+
+.projects h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: green;
+  margin-bottom: 40px;
+  text-align: left;          
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;   
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.project-box {
+  width: 318px;
+  height: 250px;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.project-box.view-more {
+  font-weight: medium;
+  font-size: larger;
+  color: #333;
+  cursor: pointer;
+  text-align: center;
+  background-color: #dcdcdc;
+}
+
+.explore-text {
+  text-align: left;          
+  max-width: 600px;
+}
+
+.explore-text p {
+  font-size: 24px;
+  font-weight: 700;
+  color: green;
+  margin: 0;
+}
+
+.explore-text span {
+  font-size: 18px;
+  font-weight: lighter;
+  color: green;
+}
+
+/* CTA */
+
+.sail {
+  position: relative; 
+  height: 100vh;                          /* full satu layar */
+  background: url(images/Saill.jpg) no-repeat center center;
+  background-size: cover;                 /* gambar penuh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: -10px 80px;
+}
+
+.sail-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.sail-left {
+  flex: 1;
+  color: #333;                            /* teks kontras dengan bg */
+  text-align: left;
+  padding-right: 40px;
+  margin-left: 55px;
+}
+
+.sail-left h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.sail-left p {
+  font-size: 20px;
+  font-weight: medium;
+  max-width: 300px;
+}
+
+.sail-right {
+  position: absolute;                     /* posisikan bebas */
+  bottom: 100px;                           /* jarak dari bawah */
+  right: 130px;                            /* jarak dari kanan */
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 300px;
+}
+
+.sail-right h3 {
+  font-family: "hanken grotesk"sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.sail-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sail-right input {
+  width: 180px;
+  max-width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.sail-right button {
+  padding: 12px;
+  background: limegreen;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.sail-right button:hover {
+  background: #2e8b57;
+}
+
+/* footer */
+
+.footer {
+  height: 60vh;               /* full satu layar */
+  background: #333;            /* dark theme */
+  color: #fff;
+  padding: 50px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* konten atas & bawah */
+  font-family: Arial, sans-serif;
+}
+
+.footer-left .logo {
+  width: 50px;          /* atur ukuran logo */
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-left .logo {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-left a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-center h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-center ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-center li {
+  margin-bottom: 10px;
+}
+
+.footer-right p {
+  font-size: 16px;
+  font-weight: medium;
+  color: #fff;
+}
+
+.footer hr {
+  border: 0;
+  border-top: 1px solid #fff;
+  margin: 0px 0;        
+  margin-top: 60px;
+  margin-bottom: 0px;
+  width: 100%;          
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 0px;      
+  padding-bottom: 0px; 
+}

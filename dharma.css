@@ -1,0 +1,329 @@
+:root{
+    --green--: #71BE46;
+    --grey--: #606161;
+    --white--: #ffffff;
+}
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* biar tiap section stack vertikal */
+}
+
+.site-header {
+  position: fixed;    /* kalau mau nempel di atas */
+  display: flex;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 999;       /* biar di atas konten lain */
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1134px;
+    top: 32px;
+    margin-top: 0px;
+    z-index: 100;
+    padding: 10px;
+}
+
+nav img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-left: 60px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+nav ul li a{
+    font-family: "hanken grotesk", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+
+.menu-toggle {
+  display: none; /* tombol hamburger disembunyiin di desktop */
+}
+
+/* cover */
+
+.cover {
+  height: 100vh;
+  background: url(images/cover-dharma.png) no-repeat center center;
+  background-size: cover;
+  justify-content: space-between;   /* geser ke kanan */
+  align-items: center;         /* rata tengah vertikal */
+  font-family: 'Hanken Grotesk', sans-serif;
+  display: flex;
+  align-items: flex-start;
+  width: cover;;
+  margin-top: 60px;
+}
+
+.spp-left {
+  flex: 1;
+  min-height: 400px; /* tinggi minimal biar seimbang */
+}
+
+.spp-right {
+  flex: 0.7;
+  text-align: justify;
+  margin-right: 120px;
+  margin-top: 20px;
+}
+
+.spp-right h1 {
+  color: var(--grey--);
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: -50px;
+}
+
+.spp-right h2 {
+  color: var(--grey--);
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: -10px;
+}
+
+.spp-right p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.scopeof{
+  color: var(--grey--);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.scope {
+  display: flex;
+  gap: 40px;
+  margin-top: -10px;
+  color: #606161;
+}
+
+.scope ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.scope li {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/*dharma*/
+
+.dhama1 {
+  height: 90vh;
+  background: url(images/dharma1.png) no-repeat center center;
+  background-size: cover;
+  justify-content: space-between;   /* geser ke kanan */
+  align-items: center;         /* rata tengah vertikal */
+  font-family: 'Hanken Grotesk', sans-serif;
+  display: flex;
+  align-items: flex-start;
+  width: cover;;
+}
+
+/*dharma2*/
+
+.dhama2 {
+  height: 90vh;
+  background: url(images/dharma2.png) no-repeat center center;
+  background-size: cover;
+  justify-content: space-between;   /* geser ke kanan */
+  align-items: center;         /* rata tengah vertikal */
+  font-family: 'Hanken Grotesk', sans-serif;
+  display: flex;
+  align-items: flex-start;
+  width: cover;;
+}
+
+/*festival*/
+
+
+.festival {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 100px;
+  background: #fff;
+  min-height: 90vh; /* full satu halaman */
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.left {
+  flex: 1;
+  text-align: left;
+}
+
+.left p {
+  flex: 1;
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--grey--);
+}
+
+.left img {
+  max-width: 100%;
+  height: auto;
+}
+
+.laptops {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.laptops img {
+  max-width: 90%; /* biar dua-duanya muat */
+  height: auto;
+}
+
+.right {
+  flex: 1;
+  padding-left: 40px;
+  text-align: left; /* rata kanan */
+  margin-top: 80px;
+}
+
+.right p {
+  flex: 1;
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--grey--);
+  margin-bottom: 40px;
+}
+
+.laptops2 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.laptops2 img {
+  max-width: 65%; /* biar dua-duanya muat */
+  height: auto;
+  margin-left: 80px;
+}
+
+
+/*review*/
+
+.review {
+  position: relative; 
+  height: 100vh;                          /* full satu layar */
+  background: url(images/review.png) no-repeat center center;
+  background-size: cover;                 /* gambar penuh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 60px;
+}
+
+/* footer */
+
+.footer {
+  height: 60vh;               /* full satu layar */
+  background: #333;            /* dark theme */
+  color: #fff;
+  padding: 50px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* konten atas & bawah */
+  font-family: Arial, sans-serif;
+}
+
+.footer-left .logo {
+  width: 50px;          /* atur ukuran logo */
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-left .logo {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-left a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-right a {
+  color: #fff;          /* hijau */
+  text-decoration: none;   /* hilangkan garis bawah */
+  font-weight: bold;
+}
+
+.footer-right a:hover {
+  text-decoration: underline; /* efek hover */
+  color: #fff;             /* hijau lebih gelap saat hover */
+}
+
+.footer-center h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-center ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-center li {
+  margin-bottom: 10px;
+}
+
+.footer-right p {
+  font-size: 16px;
+  font-weight: medium;
+  color: #fff;
+}
+
+.footer hr {
+  border: 0;
+  border-top: 1px solid #fff;
+  margin: 0px 0;        
+  margin-top: 60px;
+  margin-bottom: 0px;
+  width: 100%;          
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 0px;      
+  padding-bottom: 0px; 
+}

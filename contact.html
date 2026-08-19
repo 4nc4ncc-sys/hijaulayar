@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css" media="screen and (min-width: 1000px)">
+    <link rel="stylesheet" href="about_us_mobile.css" media="screen and (max-width: 720px)">
+</head>
+
+<body>
+    <header class="site-header">
+  <nav>
+    <div class="logo">
+      <img src="images/logo lh.svg" alt="">
+    </div>
+
+    <!-- tombol hamburger -->
+    <button class="menu-toggle">&#9776;</button>
+
+    <ul class="nav-links">
+      <li><a href="index.html">home</a></li>
+      <li><a href="services.html">services</a></li>
+      <li><a href="our_work.html">our work</a></li>
+      <li><a href="aboutus.html">about us</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+  </nav>
+</header>
+<body>
+
+<div class="overlay"></div>
+
+<section class="sail">
+  <div class="sail-content">
+    <div class="sail-left">
+      <p>Let's sail together, guiding your brand toward growth, clarity, and real progress.</p>
+    </div>
+    <div class="sail-right">
+      <h3>Contact us!</h3>
+      <form onsubmit="sendToWhatsApp(); return false;">
+  <input type="text" id="name" placeholder="Nama/Perusahaan" required>
+  <input type="tel" id="phone" placeholder="Nomor Telepon" required>
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+function sendToWhatsApp() {
+  var name = document.getElementById("name").value;
+  var phone = document.getElementById("phone").value;
+  var url = "https://wa.me/6281318624079?text=" 
+            + "Nama/Perusahaan: " + name + "%0a"
+            + "Nomor Telepon: " + phone;
+  window.open(url, "_blank");
+}
+</script>
+    </div>
+  </div>
+</section>
+

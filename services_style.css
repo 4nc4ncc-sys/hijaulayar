@@ -384,7 +384,7 @@ nav ul li a{
 
 .sail-right button {
   padding: 12px;
-  background: limegreen;
+  background: var(--green--);
   color: #fff;
   border: none;
   border-radius: 4px;

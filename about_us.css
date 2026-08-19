@@ -336,6 +336,17 @@ nav ul li a{
     transform: translateY(0);
 }
 
+/* Atur posisi card ke-4 dan ke-5 */
+.cards-grid .card-container:nth-child(4) {
+  grid-column: 1; /* Athanca di tengah */
+  margin-left: 350px;
+}
+
+.cards-grid .card-container:nth-child(5) {
+  grid-column: 2; /* Haekal di kanan */
+  margin-left: 350px;
+}
+
 /* === RESPONSIVE MEDIA QUERIES === */
 @media (max-width: 1220px) {
     .cards-section {

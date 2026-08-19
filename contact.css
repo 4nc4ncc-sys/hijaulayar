@@ -1,0 +1,149 @@
+:root{
+    --green--: #71BE46;
+    --grey--: #606161;
+    --white--: #ffffff;
+}
+
+/* Fix: body dibuat 100% & overflow-x hidden agar tidak overflow/terlalu lebar */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'hanken grotesk', sans-serif;
+  background: #fff;
+}
+
+/* === HEADER KAMU (SAMA SEPERTI ASLI) === */
+.site-header {
+  position: fixed;    /* kalau mau nempel di atas */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 999;       /* biar di atas konten lain */
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1134px;
+    top: 32px;
+    margin-top: 0px;
+    z-index: 100;
+    padding: 10px;
+}
+
+nav img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-left: 60px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+nav ul li a{
+    font-family: "hanken grotesk", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+
+/* sail */
+
+.sail {
+  position: relative; 
+  height: 100vh;                          /* full satu layar */
+  background: url(images/saill.png) no-repeat center center;
+  background-size: cover;                 /* gambar penuh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 80px;
+  margin-top: 60px;
+}
+
+.sail-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.sail-left {
+  flex: 1;
+  color: #333;                            /* teks kontras dengan bg */
+  text-align: left;
+  padding-right: 40px;
+}
+
+.sail-left h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.sail-left p {
+  font-size: 20px;
+  font-weight: lighter;
+  max-width: 300px;
+}
+
+.sail-right {
+  position: absolute;                     /* posisikan bebas */
+  bottom: 130px;                           /* jarak dari bawah */
+  right: 130px;                            /* jarak dari kanan */
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 300px;
+}
+
+.sail-right h3 {
+  font-family: "hanken grotesk"sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.sail-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sail-right input {
+  width: 180px;
+  max-width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.sail-right button {
+  padding: 12px;
+  background: var(--green--);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.sail-right button:hover {
+  background: #2e8b57;
+}

@@ -27,7 +27,7 @@
       <li><a href="services.html">services</a></li>
       <li><a href="our_work.html">our work</a></li>
       <li><a href="aboutus.html">about us</a></li>
-      <li><a href="#">contact</a></li>
+      <li><a href="contact.html">contact</a></li>
     </ul>
   </nav>
 </header>
@@ -259,11 +259,22 @@
     </div>
     <div class="sail-right">
       <h3>Contact us!</h3>
-      <form>
-        <input type="text" placeholder="Nama/Perusahaan">
-        <input type="tel" placeholder="Nomor Telepon">
-        <button type="submit">Submit</button>
-      </form>
+      <form onsubmit="sendToWhatsApp(); return false;">
+  <input type="text" id="name" placeholder="Nama/Perusahaan" required>
+  <input type="tel" id="phone" placeholder="Nomor Telepon" required>
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+function sendToWhatsApp() {
+  var name = document.getElementById("name").value;
+  var phone = document.getElementById("phone").value;
+  var url = "https://wa.me/6281318624079?text=" 
+            + "Nama/Perusahaan: " + name + "%0a"
+            + "Nomor Telepon: " + phone;
+  window.open(url, "_blank");
+}
+</script>
     </div>
   </div>
 </section>

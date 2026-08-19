@@ -53,6 +53,10 @@ nav ul li a{
     text-decoration: none;
 }
 
+.menu-toggle {
+  display: none;
+}
+
 
 /*cover*/
 .cover {
@@ -153,43 +157,56 @@ nav ul li a{
 /*feed1*/
 
 .mim-presentation {
-  display: grid;
+  display: flex;
+  background: url(images/feed-miir.png) center center no-repeat;
+  background-size: 100%;
   height: 100vh;
-  grid-template-columns: 2fr 1fr; /* kiri lebih lebar untuk posts */
-  gap: 40px;
-  padding: 40px;
+  padding: 0px 80px;
   align-items: center;
   justify-content: center;
-}
-
-.posts {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 post sejajar */
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
-.posts img {
+.posts {
   width: 100%;
+}
+
+.posts img {
+  width: 90%;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+.mim-presentation .posts:nth-child(1) {
+  margin-top: -150px;
+}
+
+/* card ke-4 (kanan bawah) turun */
+.mim-presentation .posts:nth-child(3) {
+  margin-top: -150px;
+}
+
+.mim-presentation .posts:nth-child(2) {
+  margin-top: 150px;
+}
+
+/* card ke-4 (kanan bawah) turun */
+.mim-presentation .posts:nth-child(4) {
+  margin-top: 150px;
+}
+
 .info-box {
-  background: rgba(255,255,255,0.95);
-  padding: 30px;
+  padding: 0px 30px;
   border-radius: 8px;
   font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 14px;
   color: #333;
-}
-
-.logo-wrap {
-  display: flex;
-  justify-content: flex-end; /* logo tetap di kanan */
-  margin-bottom: 20px;
-}
-
-.logo {
-  height: 50px;
+  justify-items: flex-start;
+  margin-top: -190px;
+  margin-left: 60px;
+  margin-bottom: 200px;
+  width: 200px;
 }
 
 /*posting*/

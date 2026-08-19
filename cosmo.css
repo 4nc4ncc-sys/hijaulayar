@@ -55,6 +55,10 @@ nav ul li a{
     text-decoration: none;
 }
 
+.menu-toggle {
+  display: none; /* tombol hamburger disembunyiin di desktop */
+}
+
 /* cover */
 
 .cover {

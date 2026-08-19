@@ -12,7 +12,7 @@ html, body {
   font-family: 'hanken grotesk', sans-serif;
   background: #fff;
   min-width: 1200px;   /* biar layout nggak pecah */
-  overflow-x: auto;   /* biar bisa geser, nggak kepotong */
+  overflow-x: hidden;   /* biar bisa geser, nggak kepotong */
 }
 
 

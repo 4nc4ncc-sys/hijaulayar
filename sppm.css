@@ -102,7 +102,7 @@ html, body {
 .cover {
   height: 100vh;
   background: url(images/spp\ cover.png) no-repeat left top;
-  background-size: 130%;
+  background-size: 140%;
   justify-content: space-between;   /* geser ke kanan */
   align-items: center;         /* rata tengah vertikal */
   font-family: 'Hanken Grotesk', sans-serif;
@@ -158,12 +158,12 @@ html, body {
 
 .scope ul {
   list-style-type: disc;
-  padding-left: 20px;
+  padding-left: 10px;
   margin: 0;
 }
 
 .scope li {
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 8px;
 }
 
@@ -183,7 +183,7 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 370px;
+  width: 380px;
 }
 
 video {

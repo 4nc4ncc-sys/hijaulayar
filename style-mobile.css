@@ -9,6 +9,7 @@ html, body {
   padding: 0;
   background: #fff;
   overflow-x: hidden; /* cegah scroll horizontal */
+  max-width: 350px;
 }
 
 /* default: sembunyikan menu di mobile */
@@ -604,7 +605,6 @@ html, body {
   border-radius: 10px;                  /* sudut melengkung */
   box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* efek bayangan */
   width: 100%;                          /* full lebar di mobile */
-  max-width: 290px;                     /* batas maksimal */
 }
 
 .sail-right h3 {

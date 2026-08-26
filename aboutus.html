@@ -198,9 +198,14 @@
   </div>
 </footer>
 
-    <!--end of footer section-->
-    <script src="main-desktop.js" media="(min-width: 1090px)"></script>
-    <script src="main-mobile.js" media="(max-width: 720px)"></script>
+<script>
+  if (window.innerWidth >= 1000) {
+    document.write('<script src="main-desktop.js"><\/script>');
+  } else if (window.innerWidth <= 600) {
+    document.write('<script src="main-mobile.js"><\/script>');
+  }
+</script>
+        
 </body>
 </html>
 

@@ -9,7 +9,7 @@ html, body {
   padding: 0;
   background: #fff;
   overflow-x: hidden; /* cegah scroll horizontal */
-  max-width: 350px;
+  width: 350px;
 }
 
 /* default: sembunyikan menu di mobile */

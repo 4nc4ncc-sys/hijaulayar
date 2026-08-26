@@ -305,7 +305,7 @@ nav ul li a{
 
 .text-name {
     color: rgba(255, 255, 255, 0.85);
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 900;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
@@ -318,7 +318,7 @@ nav ul li a{
 
 .text-name1 {
     color: rgba(255, 255, 255, 0.85);
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 900;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;

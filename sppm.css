@@ -118,7 +118,6 @@ html, body {
 
 .spp-right {
   flex: 0.8;
-  text-align: justify;
   margin-top: 300px;
 }
 
@@ -138,6 +137,7 @@ html, body {
 
 .spp-right p {
   color: #606161;
+  text-align: justify;
   font-size: 16px;
   line-height: 1.8;
   margin-bottom: 20px;

@@ -115,6 +115,7 @@ html, body {
   display: flex;
   align-items: stretch;   /* tinggi kiri–kanan sama */
   align-content: center;
+  margin-top: -10px;
   padding: 20px 20px;
   background: #F9AFBE;
   color: grey;
@@ -160,9 +161,11 @@ html, body {
 .fintalk-section {
   display: flex;
   align-items: stretch;   /* tinggi kiri–kanan sama */
-  gap: 40px;
-  padding: 0px 20px;
+  gap: 20px;
+  margin-top: -10px;
+  padding: 30px 20px;
   background: linear-gradient(to bottom, #F9AFBE, #fff, #fff,#fff,#fff);
+  flex-direction: column; /* teks + gambar ditumpuk */
 }
 
 .fintalk-section .left {
@@ -179,11 +182,11 @@ html, body {
 
 .fintalk-section .left p {
   color: grey;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .fintalk-section .screenshot img {
-  width: 110%;
+  width: 100%;
   border-radius: 8px;
 }
 
@@ -195,7 +198,8 @@ html, body {
 }
 
 .fintalk-section .right img {
-  display: none;
+  display: flex;
+  width: 100%;
 }
 
 /*footer*/

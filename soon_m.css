@@ -101,7 +101,7 @@ html, body {
 
 .cover {
   position: relative; 
-  height: 35vh;                          /* full satu layar */
+  height: 31vh;                          /* full satu layar */
   background: linear-gradient(to top, #fff, transparent, transparent, transparent),url(images/Cover-Soon.png) no-repeat center top;
   background-size: 170%;                 /* gambar penuh */
   display: flex;
@@ -116,6 +116,7 @@ html, body {
   justify-content: space-between;
   align-items: flex-start;
   gap: 40px;
+  margin-top: -10px;
   padding: 20px 20px;
   font-family: 'Hanken Grotesk', sans-serif;
   background: #fff;

@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="contact.css" media="screen and (min-width: 1000px)">
-    <link rel="stylesheet" href="about_us_mobile.css" media="screen and (max-width: 720px)">
+    <link rel="stylesheet" href="contact_m.css" media="screen and (max-width: 720px)">
 </head>
 
 <body>
@@ -62,3 +62,39 @@ function sendToWhatsApp() {
   </div>
 </section>
 
+    <!--end of CTA section-->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-left">
+      <img src="images/LH_trans.svg" alt="Layar Hijau Logo" class="logo">
+      <p>Say hello!<br>
+      <a href="mailto:layarhijau01@gmail.com">layarhijau01@gmail.com</a></p>
+    </div>
+
+    <div class="footer-center">
+      <h4>Services</h4>
+      <ul>
+        <li>Branding</li>
+        <li>Social Media</li>
+        <li>Digital Marketing</li>
+        <li>Graphic Design</li>
+        <li>Website</li>
+      </ul>
+    </div>
+
+    <div class="footer-right">
+      <p>Got a project?<br><strong>Let's discuss!</strong> →</p>
+    </div>
+  </div>
+
+
+<script>
+  if (window.innerWidth >= 1000) {
+    document.write('<script src="main-desktop.js"><\/script>');
+  } else if (window.innerWidth <= 600) {
+    document.write('<script src="main-mobile.js"><\/script>');
+  }
+</script>
+
+</body>
+</html>

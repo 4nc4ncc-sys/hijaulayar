@@ -15,11 +15,16 @@ overlay.addEventListener('click', () => {
   toggle.textContent = "☰";
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  const blurText = document.querySelector(".blur-text");
 
-const blurText = document.querySelector('.blur-text');
-blurText.addEventListener('click', () => {
-  blurText.classList.toggle('active');
+  // kasih delay 1 detik biar keliatan animasi masuk
+  setTimeout(() => {
+    blurText.classList.add("active");
+  }, 2000);
 });
+
+
 
 // ambil semua flip-box
 document.querySelectorAll('.flip-box').forEach(box => {

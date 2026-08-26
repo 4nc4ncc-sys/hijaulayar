@@ -101,17 +101,15 @@ html, body {
 
 .versatility {
   position: relative; 
-  height: 100vh;                          /* full satu layar */
-  background: url(images/our.jpg) no-repeat center center;
-  background-size: 100%;                 /* gambar penuh */
+  height: 30vh;                          /* full satu layar */
+  background: url(images/our.jpg) no-repeat right top;
+  background-size: 130%;                 /* gambar penuh */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -80px;
+  padding: 0px 20px;
 }
 
 .versatility-left {
-  width: 90%;
+  width: 60%;
 }
 
 .log img {
@@ -120,9 +118,10 @@ html, body {
 
 .tagline {
   color: #00a651; /* hijau terang */
-  font-size: 48px;
+  font-size: 36px;
   font-family: "hanken grotesk";
   font-weight: 200;
+  margin-top: 25px;
 }
 
 /* work */

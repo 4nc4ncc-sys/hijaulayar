@@ -99,7 +99,7 @@ html, body {
 /*hero*/
 
 .cover {
-  height: 100vh;
+  height: 87vh;
   background:  linear-gradient(to bottom, transparent, #fff, #fff, #fff, #fff),url(images/cover-dharma.png) no-repeat left top;
   background-size: 100%;
   justify-content: space-between;   /* geser ke kanan */
@@ -118,7 +118,7 @@ html, body {
 
 .spp-right {
   flex: 0.7;
-  margin-top: 100px;
+  margin-top: 130px;
   text-align: left;
 }
 

@@ -100,8 +100,8 @@ html, body {
 
 .header {
   position: relative;
-  height: 100vh;                          /* full satu layar */
-  background: url(images/serv.png) no-repeat center center;
+  height: 33vh;                          /* full satu layar */
+  background: url(images/serv.png) no-repeat center top;
   background-size: 100%;                 /* gambar penuh */
 }
 
@@ -119,7 +119,7 @@ html, body {
 
 .social-left {
   position: relative;
-  width: 350px;
+  width: 370px;
   justify-content: center;
   align-items: center;
 }
@@ -363,7 +363,7 @@ html, body {
   border-radius: 10px;                  /* sudut melengkung */
   box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* efek bayangan */
   width: 100%;                          /* full lebar di mobile */
-  max-width: 280px;                     /* batas maksimal */
+  max-width: 290px;                     /* batas maksimal */
 }
 
 .sail-right h3 {

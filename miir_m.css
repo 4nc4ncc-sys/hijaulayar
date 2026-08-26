@@ -98,26 +98,26 @@ html, body {
 }
 
 .cover {
-  height: 100vh;
+  height: 75vh;
   background: url(images/mimir.jpg) no-repeat left top;
-  background-size: 140%;
+  background-size: 160%;
   display: flex;
   align-items: center;
   justify-content: flex-end; /* box geser ke kanan */
   flex-direction: column;
+  padding: 60px 20px;
+
 }
 
 .cover-box {
   background: rgba(255,255,255,0.9); /* putih semi transparan */
-  padding: 10px 20px;
   max-width: 350px;
   font-family: 'Hanken Grotesk', sans-serif;
-  color: #333;
 }
 
 .cover-box .logo {
-  width: 50%;
-  height: 50%;
+  width: 30%;
+  height: 30%;
 }
 
 .cover-box h1 {
@@ -129,7 +129,6 @@ html, body {
 
 .cover-box h2 {
   font-size: 16px;
-  margin: 0 0 15px 0;
   color: var(--grey--);
 }
 
@@ -194,7 +193,6 @@ html, body {
 
 .mim-presentation {
   display: grid;
-  height: 50vh;
   grid-template-columns: 2fr 1fr; /* kiri lebih lebar untuk posts */
   padding: 0 20px;
   align-items: center;
@@ -229,6 +227,11 @@ html, body {
   margin-bottom: 20px;
 }
 
+.info-box {
+  padding: 0px 20px;
+  margin-top: 40px;
+  margin-bottom: -30px;
+}
 
 /*posting*/
 
@@ -237,12 +240,10 @@ html, body {
   padding: 20px 20px;
   background: #fff;
   flex-direction: column;
-  height: 120vh;
 }
 
 .left {
   width: 200px;        /* lebar banner kiri */
-  margin-top: -100px;
 }
 
 .overlay-box {

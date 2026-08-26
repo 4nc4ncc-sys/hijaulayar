@@ -100,15 +100,23 @@ html, body {
 
 /*hero*/
 
+.about {
+  position: relative; 
+  height: 35vh;                                  /* full satu layar */
+  background: url(images/about.jpg) no-repeat center top;
+  background-size: 120%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /*desc*/
 
 .whoarewe {
   display: flex;
-  height: 100vh;
   align-items: center;
-  padding: 20px 20px;
-  margin-top: -65px;
+  padding: 0px 20px;
+  margin-bottom: 80px;
 }
 
 .who-left {

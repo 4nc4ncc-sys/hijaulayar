@@ -76,7 +76,6 @@ html, body {
   padding: 8px 0;          /* kasih ruang vertikal */
 }
 
-
 .nav-links.active {
   display: flex;
   transform: translateX(0);
@@ -96,152 +95,69 @@ html, body {
   display: block;
 }
 
-/*cover*/
+/*sail*/
 
-.cover {
-  height: 90vh;
-  background: linear-gradient(to top, #fff, #fff,transparent), url(images/act.png) no-repeat left top;
-  background-size: 175%;
-  justify-content: space-between;   /* geser ke kanan */
+.sail {
+  height: 60vh;
+  padding:  30px 20px;
   font-family: 'Hanken Grotesk', sans-serif;
-  display: flex;
-  flex-direction: column;
-  padding: 20px 20px;
-}
-
-.spp-left {
-  width: 100%;
-  margin-top: 150px;
-}
-
-.spp-left h1 {
-  color: #71BE46;
-  font-size: 36px;
-  font-weight: 500;
-}
-
-.spp-left p {
-  color: var(--grey--);
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.spp-right {
-  flex: 0.8;
-  text-align: justify;
-}
-
-.spp-right h1 {
-  color: #71BE46;
-  font-size: 48px;
-  font-weight: 500;
-}
-
-
-.spp-right p {
-  color: var(--grey--);
-  font-size: 16px;
-  line-height: 1.8;
-  margin-top: -70px;
-  font-weight: 700;
-}
-
-.scopeof{
-  color: var(--grey--);
-  font-size: 16px;
-  line-height: 1.8;
-}
-
-.scope {
-  display: flex;
-  gap: 40px;
-  color: var(--grey--);
-}
-
-.scope ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin: 0;
-}
-
-.scope li {
-  font-size: 16px;
-  margin-bottom: 8px;
-}
-
-/*poster*/
-
-.poster {
-  position: relative; 
-  height: 40vh; /* penuh satu layar */
-  width: 100%;   /* isi penuh */
-  background: url("images/act-book.png") no-repeat right top;
-  background-size: 150%; /* gambar penuh */
-  display: flex;
-  align-items: center;    /* konten di tengah vertikal */
-  justify-content: center;/* konten di tengah horizontal */
-  margin-top: -250px;
-}
-
-.post {
-  /* kalau mau isi konten di atas poster */
-  color: #fff;
-  font-size: 24px;
-}
-
-/*act*/
-
-.act-poster {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px 20px;
-  font-family: 'Hanken Grotesk', sans-serif;
-  background: #fff;
-  color: #333;
+  background-color: var(--green--);
   align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.sail-content {
+  display: flex;
+  flex-direction: column;   /* langsung vertikal */
+}
+
+.sail-left p {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+.sail-right {
+  background: rgba(255,255,255,0.95);   /* kasih background putih transparan */
+  padding: 20px;                        /* ruang dalam */
+  border-radius: 10px;                  /* sudut melengkung */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* efek bayangan */
+  width: 100%;                          /* full lebar di mobile */
+  max-width: 290px;                     /* batas maksimal */
+}
+
+.sail-right h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.sail-right form {
+  display: flex;
   flex-direction: column;
+  gap: 12px;
 }
 
-/* Kiri */
-.act-left {
-  flex: 0.5;
-}
-
-.act-logo {
-  width: 300px;
-  margin-bottom: 20px;
-}
-
-.act-left p {
-  font-size: 16px;
-  line-height: 1.6;
-  flex: 0.5;
-}
-
-/* Kanan */
-.act-right {
-  flex: 0.47;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
-}
-
-.poster-card {
-  background: #f5f5f5;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.poster-card img {
+.sail-right input,
+.sail-right button {
   width: 100%;
-  display: block;
-}
-
-.poster-card p {
-  font-size: 14px;
   padding: 10px;
-  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
+.sail-right button {
+  background: #606161;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sail-right button:hover {
+  background: #333;
+}
 
 /*footer*/
 
@@ -299,4 +215,3 @@ html, body {
 .footer-bottom-right {
   text-align: right;
 }
-

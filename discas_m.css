@@ -99,7 +99,7 @@ html, body {
 /* cover */
 
 .cover {
-  min-height: 90vh;
+  min-height: 70vh;
   background: #032B5F url(images/discas-cover.png) no-repeat left top;
   background-size: 150%;
   display: flex;

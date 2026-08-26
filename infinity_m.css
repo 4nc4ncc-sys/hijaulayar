@@ -99,7 +99,7 @@ html, body {
 /*hero*/
 
 .cover {
-  height: 27vh;
+  height: 23vh;
   background:url(images/infinite-cover.png) no-repeat center top;
   background-size: 120%;
 }
@@ -110,7 +110,7 @@ html, body {
   display: flex;
   align-items: center;   /* tinggi kiri–kanan sama */
   align-content: center;
-  padding: 20px 20px;
+  padding: 0px 20px;
   color: var(--grey--);
   font-family: 'hanken grotesk', sans-serif;
   flex-direction: column;
@@ -148,7 +148,7 @@ html, body {
 /*infinite1*/
 
 .infinite1 {
-  height: 40vh;
+  height: 26vh;
   background: url(images/infinite1.png) no-repeat center bottom;
   background-size: 120%;
   justify-content: space-between;   /* geser ke kanan */
@@ -162,7 +162,7 @@ html, body {
 
 .episode-section {
   display: flex;
-  min-height: 90vh;
+  min-height: 75vh;
   color: var(--grey--);
   font-family: 'Hanken Grotesk', sans-serif;
   padding: 20px 20px;

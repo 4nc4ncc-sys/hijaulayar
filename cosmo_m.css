@@ -112,22 +112,23 @@ html, body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 40px;
-  padding: 100px 100px;
   font-family: 'Hanken Grotesk', sans-serif;
   background: #f9f9f9;
   color: #333;
-  height: auto;
+  flex-direction: column;
+  padding: 0px 20px;
+  gap: -20px;
 }
 
 /* Kiri */
 .desc-left {
-  flex: 1 1 45%;
+  flex: 1 1 100%;
 }
 
 .desc-left h1 {
   font-size: 48px;
   color:var(--green--); /* hijau brand */
+  margin-top: 5px;
 }
 
 .desc-left p {
@@ -138,7 +139,7 @@ html, body {
 
 /* Kanan */
 .desc-right {
-  flex: 1 1 45%;
+  flex: 1 1 100%;
 }
 
 .desc-right h2 {
@@ -163,24 +164,12 @@ html, body {
 }
 
 
-/* Responsif */
-@media (max-width: 768px) {
-  .desc {
-    flex-direction: column;
-    padding: 0px 20px;
-  }
-
-  .desc-left,
-  .desc-right {
-    flex: 1 1 100%;
-  }
-}
 
 /*poster*/
 
 .poster {
   position: relative; 
-  height: 50vh; /* penuh satu layar */
+  height: 40vh; /* penuh satu layar */
   width: 100%;   /* isi penuh */
   background: url("images/cosmposter.jpg") no-repeat center bottom;
   background-size: 100%; /* gambar penuh */

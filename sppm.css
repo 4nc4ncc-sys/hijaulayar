@@ -102,7 +102,7 @@ html, body {
 .cover {
   height: 100vh;
   background: url(images/spp\ cover.png) no-repeat left top;
-  background-size: 150%;
+  background-size: 120%;
   justify-content: space-between;   /* geser ke kanan */
   align-items: center;         /* rata tengah vertikal */
   font-family: 'Hanken Grotesk', sans-serif;

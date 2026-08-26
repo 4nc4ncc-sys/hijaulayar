@@ -583,6 +583,7 @@ html, body {
   padding: 20px;
   font-family: 'Hanken Grotesk', sans-serif;
   background-color: var(--green--);
+  width: 350px;
 }
 
 .sail-content {
@@ -603,7 +604,7 @@ html, body {
   border-radius: 10px;                  /* sudut melengkung */
   box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* efek bayangan */
   width: 100%;                          /* full lebar di mobile */
-  max-width: 350px;                     /* batas maksimal */
+  max-width: 290px;                     /* batas maksimal */
 }
 
 .sail-right h3 {

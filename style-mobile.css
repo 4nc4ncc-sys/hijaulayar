@@ -9,7 +9,6 @@ html, body {
   padding: 0;
   background: #fff;
   overflow-x: hidden; /* cegah scroll horizontal */
-  max-width: 600px;
 }
 
 /* default: sembunyikan menu di mobile */

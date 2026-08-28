@@ -103,7 +103,7 @@ html, body {
   justify-content: center;
   align-items: center;
   text-align: center;       /* teks rata tengah */
-  padding: 0px 20px;
+  padding: 0px 40px;
   background: #fff;         /* putih permanen */
   height: 80vh;
 }

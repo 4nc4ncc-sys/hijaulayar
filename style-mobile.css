@@ -262,7 +262,7 @@ html, body {
 }
 
 .image-circle {
-  position: relative;
+  position: flex;
   margin-top: -100px;
   width: 300px;   /* gedein ukuran */
   height: 300px;  /* gedein ukuran */

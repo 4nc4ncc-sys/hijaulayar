@@ -218,7 +218,6 @@ html, body {
   flex-direction: column; /* stack atas-bawah */
   align-items: flex-start;
   padding: 0px 20px;
-  height: 90vh;
 }
 
 .what-are-we .left {

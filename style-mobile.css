@@ -264,6 +264,7 @@ html, body {
 .image-circle {
   display: flex;
   margin-top: -300px;
+  margin-left: 50px;
   width: 300px;   /* gedein ukuran */
   height: 300px;  /* gedein ukuran */
   z-index: 2; /* di atas image-latar */

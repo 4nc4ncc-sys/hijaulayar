@@ -262,7 +262,7 @@ html, body {
 }
 
 .image-circle {
-  display: flex ;
+  display: none ;
   width: 300px;   /* gedein ukuran */
   height: 300px;  /* gedein ukuran */
   z-index: 2; /* di atas image-latar */

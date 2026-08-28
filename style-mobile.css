@@ -267,7 +267,6 @@ html, body {
 .image-circle {
   position: absolute;
   top: 100px;   /* atur posisi lingkaran */
-  right:10px;
   width: 300px;   /* gedein ukuran */
   height: 300px;  /* gedein ukuran */
   z-index: 2; /* di atas image-latar */

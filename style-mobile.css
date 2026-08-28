@@ -261,7 +261,7 @@ html, body {
   display: block;
   position: relative;
   margin-left: -80px;
-  margin-bottom: -20px;
+  margin-top: 120px;
   z-index: 1; /* layer dasar */
 }
 

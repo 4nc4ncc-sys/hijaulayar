@@ -260,8 +260,8 @@ html, body {
   height: auto;
   display: block;
   position: relative;
-  margin-left: -90px;
-  margin-bottom: 0px;
+  margin-left: -80px;
+  margin-bottom: -20px;
   z-index: 1; /* layer dasar */
 }
 

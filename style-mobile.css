@@ -135,7 +135,7 @@ html, body {
   content: "So... we make them clear";
   position: absolute;
   top: 100%;
-  left: -50%;
+  left: 50%;
   transform: translateX(-50%) translateY(20px);
   background: #71BE46;
   color: white;

@@ -103,7 +103,7 @@ html, body {
   justify-content: center;
   align-items: center;
   text-align: center;       /* teks rata tengah */
-  padding: 0px 20px;
+  padding: 0px 30px;
   background: #fff;         /* putih permanen */
   height: 80vh;
 }
@@ -135,7 +135,6 @@ html, body {
   content: "So... we make them clear";
   position: absolute;
   top: 100%;
-  left: 50%;
   transform: translateX(-50%) translateY(20px);
   background: #71BE46;
   color: white;

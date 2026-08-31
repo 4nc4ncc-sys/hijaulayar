@@ -98,7 +98,7 @@ html, body {
 }
 
 .cover {
-  height: 75vh;
+  height: 80vh;
   background: url(images/mimir.jpg) no-repeat left top;
   background-size: 160%;
   display: flex;

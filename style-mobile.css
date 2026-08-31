@@ -267,7 +267,7 @@ html, body {
   margin-left: 40px;
   width: 300px;   /* gedein ukuran */
   height: 300px;  /* gedein ukuran */
-  z-index: 3; /* di atas image-latar */
+  z-index: 5; /* di atas image-latar */
 }
 
 /*services*/

@@ -100,7 +100,7 @@ html, body {
 
 .cover {
   position: relative; 
-  height: 30vh;
+  height: 24vh;
   background: url(images/Cosm.jpg) no-repeat center top;
   background-size: 100%;
   width: none;

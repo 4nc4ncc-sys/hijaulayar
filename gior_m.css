@@ -234,6 +234,7 @@ html, body {
   color: #606161;
   text-align: left;  
   text-indent: 100px;   /* jarak masuk di awal baris */
+  margin-bottom: 10px;
 }
 
 .value {

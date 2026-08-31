@@ -233,8 +233,7 @@ html, body {
   font-weight: 300;
   color: #606161;
   text-align: left;  
-  text-indent: 100px;   /* jarak masuk di awal baris */
-  margin-top:-10px;
+  text-indent: 80px;   /* jarak masuk di awal baris */
 }
 
 .value {

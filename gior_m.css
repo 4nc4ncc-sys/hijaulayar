@@ -31,7 +31,6 @@ html, body {
   order: 2; /* pastikan di kiri */
 }
 
-
 .logo {
   order: 1; /* pastikan di kanan */
   width: 80%;   /* kecilin ukuran logo */

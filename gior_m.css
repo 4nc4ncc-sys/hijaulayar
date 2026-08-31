@@ -59,7 +59,6 @@ html, body {
   z-index: 1001;
 }
 
-
 .nav-links li {
   margin: 15px 0;          /* jarak antar item */
   list-style: none;        /* hilangin bullet */

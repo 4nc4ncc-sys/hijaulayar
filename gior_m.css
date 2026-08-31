@@ -211,7 +211,7 @@ html, body {
 .metric {
   height: 100vh;
   background: url(images/ggior.jpg) no-repeat center center/cover;
-  background-size: 130%;
+  background-size: 120%;
   display: flex;
   justify-content: space-between;   /* geser ke kanan */
   align-items: center;         /* rata tengah vertikal */

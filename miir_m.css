@@ -113,6 +113,7 @@ html, body {
   background: rgba(255,255,255,0.9); /* putih semi transparan */
   max-width: 350px;
   font-family: 'Hanken Grotesk', sans-serif;
+  margin-top: 20px;
 }
 
 .cover-box .logo {

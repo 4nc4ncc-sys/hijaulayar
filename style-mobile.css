@@ -268,7 +268,6 @@ html, body {
   width: 300px;   /* gedein ukuran */
   height: 300px;  /* gedein ukuran */
   z-index: 2; /* di atas image-latar */
-  border: 2px solid red;
 }
 
 /*services*/

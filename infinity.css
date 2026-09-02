@@ -93,11 +93,12 @@ nav ul li a{
   font-weight: 700;
 }
 
-.left {
+.wo-section .left {
   flex: 1.5;
+  max-width: 300px;
 }
 
-.left p {
+.wo-section .left p {
   font-size: 18px;
   font-weight: 400;
 }

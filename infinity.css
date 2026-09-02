@@ -79,7 +79,6 @@ nav ul li a{
   display: flex;
   align-items: center;   /* tinggi kiri–kanan sama */
   align-content: center;
-  gap: 300px;
   padding: 60px 80px;
   color: var(--grey--);
   font-family: 'hanken grotesk', sans-serif;

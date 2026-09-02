@@ -97,6 +97,7 @@ nav ul li a{
   flex-direction: column;
   justify-content: flex-start; /* konten atas & bawah sejajar */
   align-items: flex-start;
+  width: 600px;
     border: 2px solid red;
 }
 

@@ -85,7 +85,7 @@ nav ul li a{
   font-family: 'hanken grotesk', sans-serif;
 }
 
-.wo-section h1 {
+.wo-section .left h1 {
   color: var(--green--); /* biru tua elegan */
   margin-bottom: 20px;
   font-size: 32px;
@@ -94,18 +94,13 @@ nav ul li a{
 }
 
 .wo-section .left {
-  flex: 1.5;
-  max-width: 300px;
+  flex: 1;
+  max-width: 600px;
 }
 
 .wo-section .left p {
   font-size: 18px;
   font-weight: 400;
-}
-
-.wo-section .right {
-  flex: 1;
-  max-width: 300px;
 }
 
 .wo-section .right {

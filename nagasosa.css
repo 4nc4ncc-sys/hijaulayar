@@ -65,8 +65,6 @@ nav ul li a{
   height: 80vh;
   background: linear-gradient(to top, #D2512D, transparent, transparent, transparent, transparent), url(images/nagasosa-cover.png) center/cover no-repeat;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   gap: 40px;
   padding: 40px 20px;
   margin: 0;   /* jangan auto */
@@ -80,7 +78,6 @@ nav ul li a{
   justify-content: space-between;
   min-height: 80vh;
   align-items: center;   /* tinggi kiri–kanan sama */
-  align-content: center;
   gap: 200px;
   padding: 80px 80px;
   background: #D2512D;

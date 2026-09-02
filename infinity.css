@@ -77,7 +77,6 @@ nav ul li a{
 
 .wo-section {
   display: flex;
-  min-height: 80vh;
   align-items: center;   /* tinggi kiri–kanan sama */
   align-content: center;
   gap: 300px;

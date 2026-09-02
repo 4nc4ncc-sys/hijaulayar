@@ -94,8 +94,10 @@ nav ul li a{
 }
 
 .wo-section .left {
-  flex: 1;
-  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* konten atas & bawah sejajar */
+  align-items: flex-start;
 }
 
 .wo-section .left p {

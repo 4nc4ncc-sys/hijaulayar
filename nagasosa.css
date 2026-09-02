@@ -80,7 +80,6 @@ nav ul li a{
   justify-content: space-between;
   min-height: 80vh;
   align-items: center;   /* tinggi kiri–kanan sama */
-  align-content: center;
   gap: 200px;
   padding: 80px 80px;
   background: #D2512D;

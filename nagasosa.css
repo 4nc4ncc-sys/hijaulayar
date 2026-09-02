@@ -74,7 +74,7 @@ nav ul li a{
 /*description*/
 
 .wo-section {
-  display: flex;
+  display: block;
   justify-content: space-between;
   min-height: 80vh;
   align-items: center;   /* tinggi kiri–kanan sama */

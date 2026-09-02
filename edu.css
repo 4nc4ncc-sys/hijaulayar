@@ -121,7 +121,6 @@ nav ul li a{
   z-index: 777;       /* biar di atas konten lain */
   margin-left: 20px;
   margin-top: 195px;
-  border: 2px solid red;
 }
 
 .eduk-right h2 {

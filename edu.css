@@ -120,7 +120,7 @@ nav ul li a{
   align-items: flex-start; /* biar teks rata kiri */
   z-index: 777;       /* biar di atas konten lain */
   margin-left: 20px;
-  margin-top: 200px;
+  margin-top: 195px;
   border: 2px solid red;
 }
 

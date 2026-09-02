@@ -75,7 +75,6 @@ nav ul li a{
 
 .wo-section {
   display: flex;
-  min-height: 80vh;
   align-items: center;   /* tinggi kiri–kanan sama */
   gap: 200px;
   padding: 80px 80px;
@@ -92,7 +91,10 @@ nav ul li a{
 }
 
 .wo-section .left {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* konten atas & bawah sejajar */
+  align-items: flex-start;
 }
 
 .wo-section .left p {

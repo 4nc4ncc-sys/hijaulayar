@@ -74,8 +74,7 @@ nav ul li a{
 /*description*/
 
 .wo-section {
-  display: block;
-  justify-content: space-between;
+  display: flex;
   min-height: 80vh;
   align-items: center;   /* tinggi kiri–kanan sama */
   gap: 200px;
@@ -85,7 +84,7 @@ nav ul li a{
   font-family: 'hanken grotesk', sans-serif;
 }
 
-.wo-section h1 {
+.wo-section .left h1 {
   color: var(--white--); /* biru tua elegan */
   font-size: 2rem;
   margin-bottom: 20px;

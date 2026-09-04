@@ -209,6 +209,7 @@ nav ul li a{
 .infinite-content .right {
   flex: 1;
   text-align: left;
+  margin-left: 20px;
 }
 
 .infinite-content .right p {

@@ -179,6 +179,32 @@ nav ul li a{
     justify-items: center;
 }
 
+/* === SECTION CONTAINER === */
+.cards-section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 100px;
+    box-sizing: border-box;
+    background: url(images/muka.png);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* === GRID SYSTEM === */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-left: -30px;
+}
+
 /* === CONTAINER KARTU === */
 .card-container {
     position: relative;
@@ -334,17 +360,6 @@ nav ul li a{
 .card-container:hover .text-name {
     opacity: 1;
     transform: translateY(0);
-}
-
-/* Atur posisi card ke-4 dan ke-5 */
-.cards-grid .card-container:nth-child(4) {
-  grid-column: 1; /* Athanca di tengah */
-  margin-left: 350px;
-}
-
-.cards-grid .card-container:nth-child(5) {
-  grid-column: 2; /* Haekal di kanan */
-  margin-left: 350px;
 }
 
 /* === RESPONSIVE MEDIA QUERIES === */
